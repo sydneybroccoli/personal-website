@@ -5,11 +5,10 @@ const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: process.env.NODE_ENV,
   entry: {
     main: './src/index.js'
   },
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   module: {
     rules: [
     { test: /\.js$/,
@@ -35,6 +34,10 @@ module.exports = {
     } } ] } ] },
   plugins: [
     new ErrorOverlayPlugin(),
+    new CleanWebpackPlugin(),
+    new HTMLWebpackPlugin({
+      title: 'Sydney Barovsky Portfolio'
+    }),
     new extract({
       filename: 'bundle.css',
       path: path.resolve(__dirname, 'dist'),
