@@ -16,7 +16,6 @@ if (process.env.NODE_ENV !== 'production') {
 // RUN FUNCTIONS
 document.addEventListener("DOMContentLoaded", function () {
   loadParticles();
-  // requestAnimationFrame(update);
 });
 
 console.log('hello from webpacker!');
