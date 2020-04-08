@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open",
     "dev": "webpack --config webpack.config.js -d",
-    "build": "webpack --config webpack.config.js -p && ga . && gc - 'production push' && git push origin master"
+    "build": "webpack --config webpack.config.js -p && git add . && git commit -m 'production push' && git push origin master"
   },
   "repository": {
     "type": "git",
