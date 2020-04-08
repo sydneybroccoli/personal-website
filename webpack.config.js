@@ -49,12 +49,12 @@ module.exports = {
     new extract({
       filename: 'bundle.css',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: '/'
+      publicPath: ''
     })
   ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
+    publicPath: ''
   },
 };
