@@ -6,8 +6,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    main: './assets/js/index.js'
+    main: './assets/javascript/index.js'
   },
+  devServer: { contentBase: './dist' },
   module: {
     rules: [
     { test: /\.js$/,
@@ -27,7 +28,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({ filename: 'bundle.css' }),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({ title: 'Output Management', }),
+    new HtmlWebpackPlugin({ template: 'index.html' }),
   ],
   output: {
     filename: 'bundle.js',
