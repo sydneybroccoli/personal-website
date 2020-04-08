@@ -4,9 +4,9 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
     "dev": "webpack --config webpack.config.js -d",
-    "build": "webpack --env production"
+    "start": "webpack --config webpack.config.js -d && webpack-dev-server",
+    "build": "webpack --config webpack.config.js -p"
   },
   "repository": {
     "type": "git",
