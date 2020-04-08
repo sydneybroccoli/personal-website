@@ -49,11 +49,14 @@ module.exports = {
     new extract({
       filename: 'bundle.css'
     }),
-    new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
       title: 'SYDNEY BAROVSKY PORTFOLIO',
-      template: './src/index.html'
+      template: './src/index.html',
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: '/',
+      filename: 'index.html'
     }),
+    new CleanWebpackPlugin(),
   ],
 };
 
