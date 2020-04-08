@@ -4,9 +4,10 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --config webpack.config.js --env.env=dev",
-    "start": "webpack-dev-server --open --config webpack.config.js --env.env=dev",
-    "prod": "webpack --config webpack.config.js --env.env=prod"
+    "dev:start": "webpack-dev-server --open --config webpack.config.js --env.env=dev",
+    "dev:build": "webpack --config webpack.config.js --env.env=dev",
+    "prod:build": "webpack --config webpack.config.js --env.env=prod",
+    "prod:push": "git add . && git commit -m --no-edit && git push origin master"
   },
   "repository": {
     "type": "git",
