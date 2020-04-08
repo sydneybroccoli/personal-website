@@ -35,10 +35,6 @@ module.exports = {
     } } ] } ] },
   plugins: [
     new ErrorOverlayPlugin(),
-    new HTMLWebpackPlugin({
-      title: 'Sydney Barovsky Portfolio',
-      template: './src/index.html', //source
-    }),
     new extract({
       filename: 'bundle.css',
       path: path.resolve(__dirname, 'dist'),
