@@ -54,7 +54,7 @@ module.exports = {
       template: './src/index.html',
       path: path.resolve(__dirname, 'dist'),
       publicPath: '/',
-      filename: 'index.html'
+      filename: 'index.html',
     }),
     new CleanWebpackPlugin(),
   ],
