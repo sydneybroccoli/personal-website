@@ -10,11 +10,6 @@ module.exports = {
     main: './src/index.js'
   },
   devtool: 'inline-source-map',
-  devServer: {
-    stats: "errors-only",
-    open: true, // open page in browser
-    overlay: true, // error overlay
-  },
   module: {
     rules: [
     { test: /\.js$/,
@@ -41,8 +36,8 @@ module.exports = {
   plugins: [
     new ErrorOverlayPlugin(),
     new HTMLWebpackPlugin({
-             template: './src/index.html', //source
-             filename: 'index.html'  //destination
+      title: 'Sydney Barovsky Portfolio',
+      template: './src/index.html', //source
     }),
     new extract({
       filename: 'bundle.css',
