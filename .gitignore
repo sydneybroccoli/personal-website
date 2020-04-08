@@ -1,2 +1,9 @@
-node_modules/
-dist/
+*.gem
+.bundle
+.sass-cache
+_site/
+Gemfile.lock
+**/.ruby-version
+node_modules
+dist
+.assets
