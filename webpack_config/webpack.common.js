@@ -54,7 +54,7 @@ module.exports = {
       title: 'SYDNEY BAROVSKY PORTFOLIO',
       template: './src/index.html',
       filename: 'index.html',
-      favicon: "./assets/images/favicon/favicon.png",
+      favicon: "./assets/images/favicon/favicon.ico",
     }),
     new CleanWebpackPlugin(),
   ],
