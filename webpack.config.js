@@ -12,8 +12,6 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     stats: "errors-only",
-    host: process.env.HOST, // default: localhost
-    port: process.env.PORT, // default: 8080
     open: true, // open page in browser
     overlay: true, // error overlay
   },
@@ -49,12 +47,12 @@ module.exports = {
     new extract({
       filename: 'bundle.css',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: ''
+      publicPath: '/'
     })
   ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: ''
+    publicPath: '/'
   },
 };
