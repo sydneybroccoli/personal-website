@@ -1,12 +1,15 @@
-import './style.scss';  // import main SASS FILE
-import _ from 'lodash';
+// IMPORT FILES
+require('../assets/images/favicon.ico');
 
-// IMPORT LIBRARIES
+// IMPORT STYLE
+import './style.scss';  // import main SASS FILE
+
+// IMPORT JS LIBRARIES
+import _ from 'lodash';
 import { loadParticles } from '../assets/javascript/scripts/init_particles.js'
 
-
-// IMPORT PLUGINS
-// IMPORT OTHER SCRIPTS
+// IMPORT JS PLUGINS
+// IMPORT OTHER JS SCRIPTS
 
 // DEVELOPMENT MODE?
 if (process.env.NODE_ENV !== 'production') {
