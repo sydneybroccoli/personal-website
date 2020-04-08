@@ -1,5 +1,4 @@
 // IMPORT FILES
-require('../assets/images/favicon.ico');
 
 // IMPORT STYLE
 import './style.scss';  // import main SASS FILE

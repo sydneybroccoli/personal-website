@@ -1,5 +1,6 @@
 const path = require('path');
 const extract = require("mini-css-extract-plugin");
+const favicon= require('favicons-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -53,7 +54,7 @@ module.exports = {
       title: 'SYDNEY BAROVSKY PORTFOLIO',
       template: './src/index.html',
       filename: 'index.html',
-      favicon: "./assets/images/favicon.ico",
+      favicon: "./assets/images/favicon/favicon.png",
     }),
     new CleanWebpackPlugin(),
   ],
