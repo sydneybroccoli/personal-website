@@ -7,7 +7,7 @@
     "dev:start": "webpack-dev-server --open --config webpack.config.js --env.env=dev",
     "dev:build": "webpack --config webpack.config.js --env.env=dev",
     "prod:build": "webpack --config webpack.config.js --env.env=prod",
-    "prod:push": "git add . && git commit -m --no-edit && git push dist master"
+    "prod:push": "git add . && git commit -m --no-edit && git push subtree --prefix dist origin master"
   },
   "repository": {
     "type": "git",
