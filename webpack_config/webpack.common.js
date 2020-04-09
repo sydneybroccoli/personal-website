@@ -4,6 +4,7 @@ const favicon= require('favicons-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CSPWebpackPlugin = require('csp-webpack-plugin');
 
 module.exports = {
   entry: {
