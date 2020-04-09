@@ -53,7 +53,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       title: 'SYDNEY BAROVSKY PORTFOLIO',
-      template: './index.html',
+      template: './src/index.html',
       filename: 'index.html',
       favicon: "./assets/images/favicon/favicon.ico",
     }),
