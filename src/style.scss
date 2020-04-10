@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
 // EXTERNAL LINKS
-@import 'https://unpkg.com/primer/build/build.css';
+// @import 'https://unpkg.com/primer/build/build.css';
 @import "bootstrap/scss/bootstrap";
 
 // INTERNAL LINKS (PARTIALS)
 @import '../assets/stylesheets/config/index';
 @import '../assets/stylesheets/components/index';
-
 
 // COMMON SCSS
 html,
