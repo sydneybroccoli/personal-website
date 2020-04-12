@@ -1,50 +1,56 @@
-.edu-card {
+.exp-card {
   margin: 0 0.25rem;
   padding: 0 0.25rem;
 
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: auto 1fr;
   gap: 0px 10px;
   grid-template-areas:
-  'degree  date'
-  'school  location'
-  'content content';
+  'position    date'
+  'company     location'
+  'description description'
+  'content     content';
 }
 
-.edu-degree {
-  grid-area: degree;
+.exp-position {
+  grid-area: position;
   justify-self: start;
 
-  font-weight: bold;
   text-transform: uppercase;
-
-  #edu-focus {
-    text-transform: none;
-    font-variant: small-caps;
-  }
+  font-weight: bold;
 }
-.edu-date {
+.exp-date {
   grid-area: date;
   justify-self: end;
   text-align: right;
-}
-.edu-school {
-  grid-area: school;
-  justify-self: start;
 
   text-transform: uppercase;
 }
-.edu-location {
+.exp-company {
+  grid-area: company;
+  justify-self: start;
+
+  text-transform: uppercase;
+  font-style: italic;
+}
+.exp-location {
   grid-area: location;
   justify-self: start;
-  text-align: left;
 
   font-variant: small-caps;
+  font-style: italic;
 }
-.edu-content {
-  grid-area: content;
+.exp-description {
+  grid-area: description;
   justify-self: start;
+
+  padding: 0 0.5em;
+
+  font-style: italic;
+}
+.exp-content {
+  grid-area: content;
 
   padding-top: 5px;
 
