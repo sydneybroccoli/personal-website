@@ -17,6 +17,13 @@ module.exports = {
   },
   module: {
     rules: [
+    // HTML PARTIALS RULES
+    { test: /\.(html)$/,
+      include: path.resolve(__dirname, './assets/pages'),
+      use: {
+        loader: 'html-loader',
+        options: {
+          interpolate: true } } },
     // JAVASCRIPT RULES
     { test: /\.js$/,
       exclude: /(node_modules)/,  // ignore node_module JS files
