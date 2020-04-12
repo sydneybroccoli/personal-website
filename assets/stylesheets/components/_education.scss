@@ -1,0 +1,61 @@
+.edu-header {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2em;
+}
+
+.edu-card {
+  margin: 0 0.5em;
+  padding: 0 0.5em;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+  'position date'
+  'company  location'
+  'content  content';
+}
+
+.edu-position {
+  grid-area: position;
+  justify-self: start;
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.edu-date {
+  grid-area: date;
+  justify-self: end;
+  text-align: right;
+
+  text-transform: uppercase;
+}
+.edu-company {
+  grid-area: company;
+  justify-self: start;
+
+  text-transform: uppercase;
+  font-style: italic;
+}
+.edu-location {
+  grid-area: location;
+  justify-self: start;
+
+  font-variant: small-caps;
+  font-style: italic;
+}
+.edu-content {
+  grid-area: content;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li:before {
+    content: "\00BB \0020";
+    padding-right: 0.5em;
+  }
+}
