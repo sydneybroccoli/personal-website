@@ -8,7 +8,7 @@
   gap: 0px 10px;
   grid-template-areas:
   'degree  date'
-  'school  location'
+  'school  school'
   'content content';
 }
 
@@ -19,7 +19,7 @@
   font-weight: bold;
   text-transform: uppercase;
 
-  #edu-focus {
+  .edu-focus {
     text-transform: none;
     font-variant: small-caps;
   }
@@ -34,24 +34,22 @@
   justify-self: start;
 
   text-transform: uppercase;
-}
-.edu-location {
-  grid-area: location;
-  justify-self: start;
-  text-align: left;
 
-  font-variant: small-caps;
+  .edu-location {
+    text-transform: none;
+    font-variant: small-caps;
+  }
 }
 .edu-content {
   grid-area: content;
   justify-self: start;
 
-  padding-top: 5px;
+  padding-top: 2.5px;
 
   ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0.5em;
   }
   li:before {
     content: "\00BB \0020";

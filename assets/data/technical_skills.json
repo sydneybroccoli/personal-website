@@ -1,0 +1,39 @@
+[
+  {
+    "category": "general",
+    "skills": [
+      "MS Office (Word; Excel; PPT; Publisher)",
+      "Budgeting",
+      "Statistical Analysis",
+      "Computing",
+      "Documentation",
+      "Research",
+      "Clinical Research",
+      "Data Acquisition",
+      "Test Development",
+      "Circuitry (Analog; Digital)"
+    ]
+  },
+  {
+    "category": "basic",
+    "skills": [
+      "Computer Aided Design (CAD)",
+      "Labview",
+      "Computing (C++; HTML; CSS; Ruby; JavaScript; Linux)",
+      "Raspberry Pi",
+      "PSoC"
+    ]
+  },
+  {
+    "category": "advanced",
+    "skills": [
+      "Multisim",
+      "Matlab",
+      "Electric Body Signals",
+      "Autoscoper",
+      "VICON Motion Capture System",
+      "Kistler Force Plates",
+      "MS Visio"
+    ]
+  }
+]

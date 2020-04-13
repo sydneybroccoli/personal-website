@@ -8,7 +8,7 @@
   gap: 0px 10px;
   grid-template-areas:
   'position    date'
-  'company     location'
+  'company     company'
   'description description'
   'content     content';
 }
@@ -33,13 +33,11 @@
 
   text-transform: uppercase;
   font-style: italic;
-}
-.exp-location {
-  grid-area: location;
-  justify-self: start;
 
-  font-variant: small-caps;
-  font-style: italic;
+  .exp-location {
+    text-transform: none;
+    font-variant: small-caps;
+  }
 }
 .exp-description {
   grid-area: description;
@@ -52,12 +50,16 @@
 .exp-content {
   grid-area: content;
 
-  padding-top: 5px;
+  padding-top: 2.5px;
 
+  p {
+    margin: 0;
+    padding: 0;
+  }
   ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0.5em;
   }
   li:before {
     content: "\00BB \0020";
