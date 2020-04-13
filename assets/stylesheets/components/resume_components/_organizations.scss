@@ -1,0 +1,25 @@
+.org-card {
+  margin: 0 0.25rem;
+  padding: 0 0.25rem;
+
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 0px 10px;
+  grid-template-areas:
+  'dates title organization';
+}
+
+.org-dates {
+  grid-area: dates;
+}
+.org-title {
+  grid-area: title;
+
+  font-style: italic;
+}
+.org-organization {
+  grid-area: organization;
+
+  font-weight: bold;
+  font-variant: small-caps;
+}
