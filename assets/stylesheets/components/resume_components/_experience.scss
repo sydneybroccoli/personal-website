@@ -58,11 +58,32 @@
   }
   ul {
     list-style-type: none;
+    list-style-position: outside;
+    counter-reset: li;
+    counter-reset: li-sub;
+
     margin: 0;
     padding: 0 0.5em;
   }
-  li:before {
+  li.bullet:before {
     content: "\00BB \0020";
+    padding-right: 0.5em;
+  }
+  li.sub-bullet:before {
+    content: "-";
+    margin-left: 1.5em;
+    padding-right: 0.5em;
+  }
+  li.number:before {
+    counter-increment: li;
+    content: counter(li)':';
+    padding-right: 0.5em;
+  }
+  li.sub-number:before {
+    counter-increment: li-sub;
+    content: counter(li-sub)':';
+
+    margin-left: 1.5em;
     padding-right: 0.5em;
   }
 }
