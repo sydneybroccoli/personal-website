@@ -1,28 +1,29 @@
 [
   {
-    "school": "Le Wagon",
-    "location": "Bali, Indonesia",
-    "degree": "Full Stack Web Development/Computer Programming",
-    "graduation date": "03/2020",
-    "content": [
-      { ">": "BATCH: #349" },
-      { ">": "9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript, ES2015, SQL, git, GitHub, Heroku, and Ruby on Rails.  Designed, implemented and shipped to production a clone of AirBNB and other Rails prototypes." },
-      { ">": "My Github Profile: https://github.com/sydneybroccoli/" }
+    "edu-school": "Le Wagon",
+    "edu-location": "Bali, Indonesia",
+    "edu-degree": "Full Stack Web Development/Computer Programming",
+    "edu-date": "03/2020",
+    "edu-content": [
+      { "bullet": "BATCH: #349" },
+      { "bullet": "9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript, ES2015, SQL, git, GitHub, Heroku, and Ruby on Rails.  Designed, implemented and shipped to production a clone of AirBNB and other Rails prototypes." },
+      { "bullet": "My Github Profile: https://github.com/sydneybroccoli/" }
     ]
   },
   {
-    "school": "Marquette University",
-    "location": "Milwaukee, WI",
-    "degree": "Bachelor of Science",
-    "focus": "Biomedical Engineering",
-    "graduation date": "05/2017",
-    "content": [
-      { ">": "Bioelectrical Engineering/Electrical Engineering" }
+    "edu-school": "Marquette University",
+    "edu-location": "Milwaukee, WI",
+    "edu-degree": "Bachelor of Science",
+    "edu-focus": "Biomedical Engineering",
+    "edu-date": "05/2017",
+    "edu-content": [
+      { "bullet": "Bioelectrical Engineering/Electrical Engineering" }
     ]
   },
   {
-    "school": "Eastlake HS",
-    "location": "Sammamish, WA",
-    "graduation date": "06/2013",
+    "edu-school": "Eastlake HS",
+    "edu-location": "Sammamish, WA",
+    "edu-degree": "HS Diploma",
+    "edu-date": "06/2013"
   }
 ]

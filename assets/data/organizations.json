@@ -1,12 +1,12 @@
 [
   {
-    "organization": "Marquette Women's Club Lacrosse",
-    "title": "Member",
-    "dates": "2013 - 2017"
+    "org-organization": "Marquette Women's Club Lacrosse",
+    "org-title": "Member",
+    "org-dates": "2013 - 2017"
   },
   {
-    "organization": "Alpha Chi Women's Fraternity",
-    "title": "Member",
-    "dates": "2014 - 2017"
+    "org-organization": "Alpha Chi Women's Fraternity",
+    "org-title": "Member",
+    "org-dates": "2014 - 2017"
   }
 ]

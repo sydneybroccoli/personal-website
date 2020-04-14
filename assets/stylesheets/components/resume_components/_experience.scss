@@ -1,5 +1,5 @@
 .exp-card {
-  margin: 0 0.25rem;
+  margin: 1rem 0.25rem;
   padding: 0 0.25rem;
 
   display: grid;
@@ -20,7 +20,7 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-.exp-date {
+.exp-dates {
   grid-area: date;
   justify-self: end;
   text-align: right;
@@ -64,6 +64,9 @@
 
     margin: 0;
     padding: 0 0.5em;
+  }
+  li.description:before {
+    padding-right: 0.5em;
   }
   li.bullet:before {
     content: "\00BB \0020";

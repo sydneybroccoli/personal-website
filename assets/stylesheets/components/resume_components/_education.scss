@@ -1,5 +1,5 @@
 .edu-card {
-  margin: 0 0.25rem;
+  margin: 1rem 0.25rem;
   padding: 0 0.25rem;
 
   display: grid;
@@ -14,15 +14,18 @@
 
 .edu-degree {
   grid-area: degree;
+  display: inline;
   justify-self: start;
 
   font-weight: bold;
   text-transform: uppercase;
+}
+.edu-focus {
+  grid-area: degree;
+  display: inline;
 
-  .edu-focus {
-    text-transform: none;
-    font-variant: small-caps;
-  }
+  text-transform: none;
+  font-variant: small-caps;
 }
 .edu-date {
   grid-area: date;
@@ -31,14 +34,18 @@
 }
 .edu-school {
   grid-area: school;
+  display: inline;
   justify-self: start;
 
   text-transform: uppercase;
 
-  .edu-location {
-    text-transform: none;
-    font-variant: small-caps;
-  }
+}
+.edu-location {
+  grid-area: school;
+  display: inline;
+
+  text-transform: none;
+  font-variant: small-caps;
 }
 .edu-content {
   grid-area: content;

@@ -1,7 +1,7 @@
 [
   {
-    "category": "general",
-    "skills": [
+    "txs-category": "general",
+    "txs-skills": [
       "MS Office (Word; Excel; PPT; Publisher)",
       "Budgeting",
       "Statistical Analysis",
@@ -15,8 +15,8 @@
     ]
   },
   {
-    "category": "basic",
-    "skills": [
+    "txs-category": "basic",
+    "txs-skills": [
       "Computer Aided Design (CAD)",
       "Labview",
       "Computing (C++; HTML; CSS; Ruby; JavaScript; Linux)",
@@ -25,8 +25,8 @@
     ]
   },
   {
-    "category": "advanced",
-    "skills": [
+    "txs-category": "advanced",
+    "txs-skills": [
       "Multisim",
       "Matlab",
       "Electric Body Signals",

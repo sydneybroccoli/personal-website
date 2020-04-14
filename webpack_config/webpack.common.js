@@ -18,7 +18,7 @@ module.exports = {
   module: {
     rules: [
     // HTML PARTIALS RULES
-    { test: /_.*\.(html)$/,
+    { test: /\.(html)$/,
       include: path.resolve(__dirname, './assets/pages'),
       use: {
         loader: 'html-loader',
