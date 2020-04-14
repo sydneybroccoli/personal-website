@@ -62,6 +62,9 @@
     margin: 0;
     padding: 0 0.5em;
   }
+  li {
+    text-indent: -1.5em;
+  }
   li.bullet:before {
     content: "\00BB \0020";
     padding-right: 0.5em;

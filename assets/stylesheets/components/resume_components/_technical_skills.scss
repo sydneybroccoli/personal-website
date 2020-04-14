@@ -51,8 +51,11 @@
     margin: 0;
     padding: 0 0.5em;
 
-    li.no-bullet {
-      padding-bottom: 0.33em;
-    }
+  }
+  li {
+    text-indent: -1.5em;
+  }
+  li.no-bullet {
+    padding-bottom: 0.33em;
   }
 }
