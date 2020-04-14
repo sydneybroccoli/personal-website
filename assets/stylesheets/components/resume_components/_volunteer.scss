@@ -4,11 +4,11 @@
 
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto 1fr;
   gap: 0px 10px;
   grid-template-areas:
-  'position    organization'
-  'description description';
+  'position    x           organization'
+  'description description description';
 }
 
 .vol-position {
@@ -16,6 +16,9 @@
 
   text-transform: uppercase;
   font-weight: bold;
+}
+.vol-formatting {
+  grid-area: x;
 }
 .vol-organization {
   grid-area: organization;

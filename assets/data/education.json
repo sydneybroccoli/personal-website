@@ -12,8 +12,8 @@
   },
   {
     "edu-school": "Marquette University",
-    "edu-location": "Milwaukee, WI",
-    "edu-degree": "Bachelor of Science",
+    "edu-location": "(Milwaukee, WI)",
+    "edu-degree": "Bachelor of Science |",
     "edu-focus": "Biomedical Engineering",
     "edu-date": "05/2017",
     "edu-content": [
@@ -22,7 +22,7 @@
   },
   {
     "edu-school": "Eastlake HS",
-    "edu-location": "Sammamish, WA",
+    "edu-location": "(Sammamish, WA)",
     "edu-degree": "HS Diploma",
     "edu-date": "06/2013"
   }

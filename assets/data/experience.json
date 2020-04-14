@@ -3,7 +3,7 @@
     "exp-position": "Bartender",
     "exp-dates": "07/2018 - 11/2019",
     "exp-company": "Scaffidi's Hideout",
-    "exp-location": "Milwaukee, WI",
+    "exp-location": "(Milwaukee, WI)",
     "exp-description": "Neighborhood “dive bar” which also hosts a competitive pool league twice a year (Oct-Mar; May-Aug).",
     "exp-content": [
       { "bullet": "Responsible for opening and operating the bar unassisted." },
@@ -24,7 +24,7 @@
     "exp-position": "Guest Services",
     "exp-dates": "09/2017 - 02/2018",
     "exp-company": "iPic Theaters: Gold Class Cinemas",
-    "exp-location": "Glendale, WI",
+    "exp-location": "(Glendale, WI)",
     "exp-description": "Upscale cinema that specializes in the full, high-class, night out experience.",
     "exp-content": [
       { "bullet": "Managed the front desk; assisted up to 500+ customers in-house and over the phone, daily." },
@@ -36,7 +36,7 @@
     "exp-position": "Test Development/Research Engineer",
     "exp-dates": "05/2015 - 08/2017",
     "exp-company": "Office of Science and Engineering Laboratories | ... | Human Device Interaction Lab <br> Food & Drug Administration",
-    "exp-location": "White Oak, MD",
+    "exp-location": "(White Oak, MD)",
     "exp-description": "Federal agency, of the US Department of Health and Human Services, which serves to promote and protect public health. The Human-Device Interaction group studies interactions between humans and existing/emerging medical devices/technologies with the goal of improving therapeutic, diagnostic, and rehabilitative outcomes.",
     "exp-content": [
       { "description": "PROJECT: Test method development for next-generation upper limb prosthetics; utilized quantitative data collection methods (motion capture; force plates; EMG; EEG) to better quantify movements of upper limb prosthetic users during simulated daily use across different generations of devices." },
