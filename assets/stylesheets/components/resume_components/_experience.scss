@@ -63,10 +63,10 @@
     counter-reset: li-sub;
 
     margin: 0;
-    padding: 0 0.5em;
+    padding: 0 2.0em;
   }
   li.bullet, li.number {
-    text-indent: -1.5em;
+    text-indent: -3.0em;
   }
   li.sub-bullet, li.sub-number {
     text-indent: -3.0em;
@@ -82,7 +82,6 @@
     content: "-";
     margin-left: 1.5em;
     padding-right: 0.5em;
-    text-indent: -3.0em;
   }
   li.number:before {
     counter-increment: li;
@@ -95,6 +94,5 @@
 
     margin-left: 1.5em;
     padding-right: 0.5em;
-    text-indent: -3.0em;
   }
 }
