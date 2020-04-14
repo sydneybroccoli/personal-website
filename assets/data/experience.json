@@ -39,7 +39,7 @@
     "exp-location": "(White Oak, MD)",
     "exp-description": "Federal agency, of the US Department of Health and Human Services, which serves to promote and protect public health. The Human-Device Interaction group studies interactions between humans and existing/emerging medical devices/technologies with the goal of improving therapeutic, diagnostic, and rehabilitative outcomes.",
     "exp-content": [
-      { "description": "PROJECT: Test method development for next-generation upper limb prosthetics; utilized quantitative data collection methods (motion capture; force plates; EMG; EEG) to better quantify movements of upper limb prosthetic users during simulated daily use across different generations of devices." },
+      { "no-bullet": "PROJECT: Test method development for next-generation upper limb prosthetics; utilized quantitative data collection methods (motion capture; force plates; EMG; EEG) to better quantify movements of upper limb prosthetic users during simulated daily use across different generations of devices." },
       { "bullet": "Developed 2 testing protocols, utilizing different quantitative data collection systems:" },
       { "sub-number": "Modification and combination of existing testing systems (Box and Blocks; Jebsen-Taylor Hand Function Test) as to assess the dexterity of movements while completing tasks designed to simulate daily life; used in conjunction with motion capture (VICON) and force plate (Kistler) data to observe and assess specific movements (and their potential to cause future injury) across different users and different generations of devices." },
       { "sub-number": "Designed a new test delivery method for an existing testing system (Box and Blocks atop a “Lazy Susan”) as to allow for non-stop testing; used in conjunction with the electroencephalography (EEG) system to determine the amount of cognitive load (mental effort) required in completing tasks of varying difficulty." },
@@ -56,7 +56,7 @@
     "exp-location": "Milwaukee, WI",
     "exp-description": "Research group dedicated to developing new tools and technologies that would improve the quality of life for children with orthopaedic conditions (cerebral palsy, clubfoot, spina bifida, spinal cord injuries, brittle bone disease, etc).",
     "exp-content": [
-      { "p": "PROJECT: Quantify the use of a x-ray fluoroscopy system for observing in vivo hindfoot motion during normal gait." },
+      { "no-bullet": "PROJECT: Quantify the use of a x-ray fluoroscopy system for observing in vivo hindfoot motion during normal gait." },
       { "bullet": "Utilized Autoscoper software to extract data from X-Ray Fluoroscopy images of the (hind)foot during gait" },
       { "sub-bullet": "25+ trials with 100+ images/trial." }
     ]

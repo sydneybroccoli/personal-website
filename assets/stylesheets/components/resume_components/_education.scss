@@ -60,10 +60,17 @@
     counter-reset: li-sub;
 
     margin: 0;
-    padding: 0 0.5em;
+    padding: 0 2.0em;
   }
-  li {
+  li.no-bullet {
+    margin: 0 -2.0em;
+  }
+  li.bullet, li.number {
     text-indent: -1.5em;
+  }
+  li.sub-bullet, li.sub-number {
+    padding: 0 1.5em;
+    text-indent: -3.0em;
   }
   li.bullet:before {
     content: "\00BB \0020";

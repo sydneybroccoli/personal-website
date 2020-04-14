@@ -52,10 +52,6 @@
 
   padding-top: 2.5px;
 
-  p {
-    margin: 0;
-    padding: 0;
-  }
   ul {
     list-style-type: none;
     list-style-position: outside;
@@ -65,14 +61,15 @@
     margin: 0;
     padding: 0 2.0em;
   }
+  li.no-bullet {
+    margin: 0 -2.0em;
+  }
   li.bullet, li.number {
-    text-indent: -3.0em;
+    text-indent: -1.5em;
   }
   li.sub-bullet, li.sub-number {
+    padding: 0 1.5em;
     text-indent: -3.0em;
-  }
-  li.description:before {
-    padding-right: 0.5em;
   }
   li.bullet:before {
     content: "\00BB \0020";
