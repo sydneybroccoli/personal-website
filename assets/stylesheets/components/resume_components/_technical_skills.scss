@@ -6,6 +6,11 @@
   .resume-header {
     flex: 0 0 100%;
   }
+  .txs-card {
+    flex: 0 0 30%;
+    // MAKES ITEMS ALIGN TO TOP
+    align-self: start;
+  }
 }
 
 .txs-card {
@@ -26,26 +31,28 @@
 
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+  align-self: start;
 
   border-bottom: 2px dashed white;
+  margin-bottom: 2.5px;
 }
 .txs-skills {
   grid-area: skills;
-  padding-top: 2.5px;
 
   text-align: center;
+  align-self: start;
 
-  p {
-    margin: 0;
-    padding: 0;
-  }
   ul {
+
     list-style-type: none;
     list-style-position: outside;
-    counter-reset: li;
-    counter-reset: li-sub;
 
     margin: 0;
     padding: 0 0.5em;
+
+    li.no-bullet {
+      padding-bottom: 0.33em;
+    }
   }
 }
