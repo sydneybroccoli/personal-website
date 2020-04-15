@@ -15,22 +15,23 @@
     </div>
   </div>
   <br>
-  <div class="contact-form">
-    <form action="" class="cf-container" action="mailto:sbarovsky@gmail.com" method="post" enctype="text/plain">
+    <form class="cf-container"
+      action="https://formspree.io/xlewzpgo"
+      method="POST">
       <div class="cf-first">
-        <input type="text" class="cf-item" id="cf-first" placeholder="FIRST NAME">
+        <input type="text" name="firstname" class="cf-item" id="cf-first" placeholder="FIRST NAME">
       </div>
       <div class="cf-last">
-        <input type="text" class="cf-item" id="cf-last" placeholder="LAST NAME">
+        <input type="text" name="lastname" class="cf-item" id="cf-last" placeholder="LAST NAME">
       </div>
       <div class="cf-email">
-        <input type="text" class="cf-item" id="cf-email" placeholder="EMAIL ADDRESS" required>
+        <input type="text" name="_replyto" class="cf-item" id="cf-email" placeholder="EMAIL ADDRESS" required>
       </div>
       <div class="cf-subject">
-        <input type="text" class="cf-item" id="cf-subject" placeholder="SUBJECT" required>
+        <input type="text" name="subject" class="cf-item" id="cf-subject" placeholder="SUBJECT">
       </div>
       <div class="cf-message">
-        <textarea type="text" class="cf-item" id="cf-message" placeholder="DROP ME A LINE.." required></textarea>
+        <textarea type="text" name="message" class="cf-item" id="cf-message" placeholder="DROP ME A LINE.." required></textarea>
       </div>
       <div class="cf-button">
         <input type="submit" class="cf-item" id="cf-submit" value="SEND MESSAGE">
