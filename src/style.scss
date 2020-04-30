@@ -5,8 +5,7 @@
 // @import "bootstrap/scss/bootstrap";
 
 // INTERNAL LINKS (PARTIALS)
-@import '../assets/stylesheets/config/index';
-@import '../assets/stylesheets/components/index';
+@import '../assets/stylesheets/index';
 
 // COMMON SCSS
 html,
@@ -18,7 +17,7 @@ body {
 
   .font-header {
     @include font-header;
-   color: $dark-shade;
+    color: $dark-shade;
   }
   .font-body {
     @include font-body;
