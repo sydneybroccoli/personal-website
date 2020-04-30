@@ -1,19 +1,21 @@
 // HEADER
+.navbar {
+  height: auto;
+  overflow: hidden;
 
+  background-color: $dark-accent;
 
-// FOOTER
+  a {
+    text-decoration: none;
+    color: $light-shade;
 
-
-// SHARED
-
-
-#pills-home-tab {
-  color: white;
-  letter-spacing: 10px;
-  font-weight: 700;
-  font-size: 25px;
+  }
+  a:hover {
+    opacity: 0.75;
+  }
 }
 
-.nav-content {
-  overflow: auto;
+// FOOTER
+.footbar {
+
 }
