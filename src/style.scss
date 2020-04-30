@@ -17,9 +17,11 @@ body {
   background-color: $light-shade;
 
   .font-header {
+    @include font-header;
    color: $dark-shade;
   }
   .font-body {
+    @include font-body;
     color: $dark-shade;
   }
 }

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Roboto+Slab&display=swap');
 
 // DEFINE FONTS FOR HEADERS AND BODY
-.font-header {
+@mixin font-header {
   font-family: "Questrial", "Roboto", "sans-serif";
   font-style: bold;
   font-size: 2.5rem;
@@ -11,7 +11,7 @@
   text-transform: uppercase;
 }
 
-.font-body {
+@mixin font-body {
   font-family: "Alegreya", "Roboto Slab", "serif";
   font-style: normal;
   font-size: 1.25rem;
