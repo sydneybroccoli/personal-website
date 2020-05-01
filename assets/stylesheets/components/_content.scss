@@ -1,5 +1,12 @@
 .content {
+  // SIZING
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+
+  // DISPLAY
+  .section-header {
+    text-align: center;
+    letter-spacing: 1em;
+  }
 }
