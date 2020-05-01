@@ -1,10 +1,15 @@
-.container {
-  width: calc(100% - 30px);
+// DEFINE CONTAINER PADDING (p*) AND MARGINS (m*)
+$padding-x: 15px;
+$padding-y: 0px;
+$margin-x: auto;
+$margin-y: 0px;
 
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.container {
+  // value subtracted is the padding!!
+  width: calc(100% - $padding-x);
+
+  padding: $padding-y $padding-x;
+  margin: $margin-y $margin-x;
 
   // @media (min-width: 768px)  { width: 750px; }
   // @media (min-width: 992px)  { width: 970px; }
