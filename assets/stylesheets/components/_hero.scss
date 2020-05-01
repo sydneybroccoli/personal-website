@@ -1,10 +1,14 @@
 $main-font-color: $light-shade;
 $link-font-color: $light-shade;
 
+$hero-img-url: '../assets/images/hero-solo3.jpg';
+
 .hero {
   // SIZING
   width: 100vw;
   height: 100vh;
+  z-index: 2;
+  overflow: hidden;
 
   // DISPLAY
   display: flex;
@@ -17,7 +21,7 @@ $link-font-color: $light-shade;
   // BACKGROUND STYLING
   background-image: linear-gradient(
     rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url('../assets/images/hero-img.jpg');
+    url($hero-img-url);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

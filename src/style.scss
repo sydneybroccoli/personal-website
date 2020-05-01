@@ -12,8 +12,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+
+  // get rid of any chance of horizontal scroll
+  overflow-x: hidden;
 
   background-color: $light-shade;
 

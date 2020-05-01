@@ -6,6 +6,7 @@ $margin-y: 0px;
 
 .container {
   // value subtracted is the padding!!
+  height: auto;
   width: calc(100% - $padding-x);
 
   padding: $padding-y $padding-x;
