@@ -42,7 +42,7 @@ module.exports = {
         } ]
     },
     // IMAGE RULES
-    { test: /\.(png|jpe?g|gif|svg|ico)$/,
+    { test: /\.(pdf|png|jpe?g|gif|svg|ico)$/,
       use: [
         {
           loader: 'file-loader',
