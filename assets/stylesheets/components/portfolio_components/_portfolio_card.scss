@@ -1,0 +1,26 @@
+.work-card:hover {
+
+  h3, p {
+    color: $light-shade;
+  }
+}
+
+.work-info {
+  // SIZING
+  padding: 0.25em 0.5em;
+
+  // STYLING
+  text-align: center;
+  color: $light-shade;
+  font-family: $header-font;
+  text-transform: uppercase;
+
+  h3 {
+    color: transparent;
+    font-size: 1.5em;
+  }
+  p {
+    color: transparent;
+    font-size: 1.0em;
+  }
+}
