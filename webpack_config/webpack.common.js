@@ -47,7 +47,11 @@ module.exports = {
         {
           loader: 'file-loader',
           options: {
-            outputPath: './assets/images' } } ] },
+            name: '[name].[ext]',
+            outputPath: './assets/images'
+          }
+        } ]
+      },
     // FONT RULES
     { test: /\.(woff|woff2|ttf|otf|eot)$/,
       use: [
