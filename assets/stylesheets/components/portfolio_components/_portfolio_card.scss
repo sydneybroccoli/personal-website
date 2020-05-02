@@ -1,5 +1,9 @@
-.work-card:hover {
+.work-card {
+  margin: 0.25em;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+}
 
+.work-card:hover {
   h3, p {
     color: $light-shade;
   }
