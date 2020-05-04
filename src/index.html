@@ -21,9 +21,9 @@
     <div class="hero container navbar header">
       <ul class="list-inline d-flex f-jc-evenly">
         <li><a href="#about">ABOUT ME</a></li>
-        <li><a href="#resume">RESUME</a></li>
-        <li><a href="#top">SYDNEY BAROVSKY</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#top">SYDNEY BAROVSKY</a></li>
+        <li><a href="#resume">RESUME</a></li>
         <li><a href="#contact">CONTACT ME</a></li>
       </ul>
     </div>
@@ -34,14 +34,14 @@
         <%= require('html-loader!../assets/pages/_about.html') %>
       </div>
 
-      <div class="container" id="resume">
-        <h1 class="font-header section-header">RESUME</h1>
-        <%= require('html-loader!../assets/pages/_resume.html') %>
-      </div>
-
       <div class="container" id="portfolio">
         <h1 class="font-header section-header">PORTFOLIO</h1>
         <%= require('html-loader!../assets/pages/_portfolio.html') %>
+      </div>
+
+      <div class="container" id="resume">
+        <h1 class="font-header section-header">RESUME</h1>
+        <%= require('html-loader!../assets/pages/_resume.html') %>
       </div>
 
       <div class="container contact">
