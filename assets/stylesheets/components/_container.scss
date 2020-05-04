@@ -7,12 +7,11 @@ $margin-y: 0px;
 .container {
   // value subtracted is the padding!!
   height: auto;
-  width: calc(100% - $padding-x);
 
   padding: $padding-y $padding-x;
   margin: $margin-y $margin-x;
 
-  // @media (min-width: 768px)  { width: 750px; }
-  // @media (min-width: 992px)  { width: 970px; }
-  // @media (min-width: 1200px) { width: 1170px; }
+  @media (min-width: 768px)  { width: 750px; }
+  @media (min-width: 992px)  { width: 970px; }
+  @media (min-width: 1200px) { width: 1170px; }
 }

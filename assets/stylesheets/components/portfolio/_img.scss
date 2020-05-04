@@ -1,0 +1,25 @@
+$height: 300px;
+$width: 400px;
+
+.work-img {
+  position: relative;
+  height: $height;
+  width: $width;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: $height;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+
+  img.portrait {
+    width: 100%;
+    height: auto;
+  }
+}

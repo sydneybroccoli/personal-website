@@ -1,8 +1,8 @@
 $bg-color: $light-shade;  // background
 $font-color: $dark-shade; // font and borders
 
-$ph-color: $main-brand; // placeholder
-$focus-color: $main-brand;  //placeholder focus
+$ph-color: $dark-accent; // placeholder
+$focus-color: $dark-accent;  //placeholder focus
 $hover-color: $main-brand;
 
 .contact-content {
@@ -160,7 +160,8 @@ $hover-color: $main-brand;
 
     font-family: 'Lato', sans-serif;
     font-size: 0.875em;
-    color: $main-brand;
+    color: $light-shade;
+    background-color: $dark-accent;
 
     outline:none;
     cursor: pointer;

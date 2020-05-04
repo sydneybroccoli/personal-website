@@ -1,0 +1,46 @@
+// SKILLS ORGANIZATION
+.skills-programming {
+  width: 50%;
+}
+
+// PROGRESS BAR
+.meter {
+  height: 20px;  /* Can be anything */
+  position: relative;
+  // background: $dark-shade;
+  margin: 0.5em 0.25em;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  border: solid 0.1em $dark-shade;
+}
+
+.progress-bar {
+  font-family: $header-font;
+  color: $light-shade;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: $dark-accent;
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+
+  .skill, .hours {
+    padding: 0 0.5em;
+  }
+  .hours { color: $dark-accent; }
+
+}

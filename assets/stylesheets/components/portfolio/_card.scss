@@ -1,45 +1,45 @@
-$height: 300px;
-$width: 400px;
-
-.work-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
+// OVERLAY POSITIONING
 .work-card {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-
-  height: $height;
-  width: $width;
   margin: 0.25em;
-  // background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
-}
 
-.work-card:hover {
-  h3, p {
-    color: $light-shade;
+  .work-img { }
+  .work-info {
+    position: absolute;
+    text-align: center;
   }
 }
 
+// SIZING & STYLING
+.work-img {
+  opacity: 0.75;
+}
+
 .work-info {
-  // SIZING
   padding: 0.25em 0.5em;
 
-  // STYLING
-  text-align: center;
-  color: $light-shade;
+  color: transparent;
   font-family: $header-font;
   text-transform: uppercase;
 
   h3 {
-    color: transparent;
     font-size: 1.5em;
   }
   p {
-    color: transparent;
     font-size: 1.0em;
+    max-height: 50px;
+    overflow: hidden;
+  }
+}
+
+.work-card:hover {
+  .work-img {
+    opacity: 0.25;
+  }
+  .work-info {
+    color: $main-brand;
   }
 }

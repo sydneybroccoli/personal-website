@@ -1,0 +1,15 @@
+.skills-languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  i {
+    font-size: 2em;
+    padding: 0.25em 0.25em;
+    color: $dark-accent;
+  }
+
+  // i:hover {
+  //   opacity: 0.75;
+  // }
+}

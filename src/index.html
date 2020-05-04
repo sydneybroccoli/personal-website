@@ -9,6 +9,7 @@
 
   <!-- STYLESHEET(S) -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="bundle.css">
 </head>
 
@@ -20,11 +21,16 @@
   <section class="content" id="content">
     <div class="hero container navbar header">
       <ul class="list-inline d-flex f-jc-evenly">
-        <li><a href="#about">ABOUT ME</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#top">SYDNEY BAROVSKY</a></li>
-        <li><a href="#resume">RESUME</a></li>
-        <li><a href="#contact">CONTACT ME</a></li>
+<!--         <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li> -->
+        <li><a href="#top">
+          <i class="fas fa-angle-double-up"></i>
+          <!-- <img
+            src="./assets/images/favicon/favicon-32x32.jpg"
+            alt="Sydney Barovsky favicon"> -->
+        </a></li>
+<!--         <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT ME</a></li> -->
       </ul>
     </div>
 
@@ -32,6 +38,8 @@
       <div class="container" id="about">
         <h1 class="font-header section-header">MY STORY</h1>
         <%= require('html-loader!../assets/pages/_about.html') %>
+        <br>
+        <%= require('html-loader!../assets/pages/_resume.html') %>
       </div>
 
       <div class="container" id="portfolio">
@@ -39,12 +47,7 @@
         <%= require('html-loader!../assets/pages/_portfolio.html') %>
       </div>
 
-      <div class="container" id="resume">
-        <h1 class="font-header section-header">RESUME</h1>
-        <%= require('html-loader!../assets/pages/_resume.html') %>
-      </div>
-
-      <div class="container contact">
+      <div class="container" id="contact">
         <h1 class="font-header section-header">CONTACT ME</h1>
         <%= require('html-loader!../assets/pages/_contact.html') %>
       </div>
@@ -55,6 +58,11 @@
         <li class="social-icon">
           <a href="https://www.linkedin.com/in/sydneybarovsky/">
             <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-icon">
+          <a href="mailto:sbarovsky@gmail.com">
+            <i class="fas fa-envelope"></i>
           </a>
         </li>
         <li class="social-icon">
