@@ -5,10 +5,15 @@
 @import "navigation";
 
 // ABOUT COMPONENTS
+@import "about/heading";
+@import "about/img";
+
 // CONTACT COMPONENTS
+@import "contact/form";
+
 // PORTFOLIO COMPONENTS
-@import "portfolio_components/portfolio_card";
+@import "portfolio/card";
 
 // RESUME COMPONENTS
-@import "resume_components/resume_modal";
+@import "resume/modal";
 

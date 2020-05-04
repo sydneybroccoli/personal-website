@@ -1,7 +1,5 @@
 $img-size: 200px;
 
-.about-container {}
-
 .about-img {
   position: relative;
   height: $img-size;
@@ -29,8 +27,4 @@ $img-size: 200px;
     width: 100%;
     height: auto;
   }
-}
-
-.about-content {
-  text-align: center;
 }

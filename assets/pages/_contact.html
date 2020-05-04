@@ -1,12 +1,15 @@
 <div class="container contact-content">
-<form id="form" class="topBefore">
+  <form id="form" class="contact-form"
+    action="https://formspree.io/xlewzpgo"
+    method="POST">
 
-  <input id="name" type="text" placeholder="NAME">
-  <input id="email" type="text" placeholder="E-MAIL">
-  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+    <input id="name" type="text" placeholder="NAME" name="name">
+    <input id="email" type="text" placeholder="E-MAIL" name="_replyto">
+    <input id="subject" type="text" placeholder="SUBJECT" name="subject">
+    <textarea id="message" type="text" placeholder="DROP ME A LINE..." name="message">
+    </textarea>
 
-  <input id="submit" type="submit" value="GO!">
-
-</form>
+    <input id="submit" type="submit" value="GO!">
+  </form>
 </div>
 
