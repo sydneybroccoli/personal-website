@@ -1,6 +1,21 @@
+$height: 300px;
+$width: 400px;
+
+.work-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .work-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  height: $height;
+  width: $width;
   margin: 0.25em;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+  // background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
 }
 
 .work-card:hover {
