@@ -1,0 +1,29 @@
+.col-2 { width: 20%; }
+.col-8 { width: 80%; }
+
+.timeline-item {
+  padding: 10px;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+  border: 2px solid $main-brand;
+  border-radius: 15px;
+}
+
+.timeline-item-img {
+  align-self: center;
+
+  .circle {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.timeline-item-content {
+  align-self: center;
+}
+
