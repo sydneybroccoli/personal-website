@@ -5,6 +5,8 @@ $ph-color: $dark-accent; // placeholder
 $focus-color: $dark-accent;  //placeholder focus
 $hover-color: $main-brand;
 
+
+
 .contact-content {
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: $ph-color;
@@ -96,14 +98,14 @@ $hover-color: $main-brand;
 
   #form {
     position: relative;
-    width: 500px;
+    width: 100%;
     margin: 25px auto;
   }
 
   input {
     font-family: 'Lato', sans-serif;
     font-size: 0.875em;
-    width: 470px;
+    width: 100%;
     height: 50px;
     padding: 0px 15px 0px 15px;
 
@@ -126,8 +128,8 @@ $hover-color: $main-brand;
   }
 
   textarea {
-    width: 470px;
-    max-width: 470px;
+    width: 100%;
+    max-width: 100%;
     height: 110px;
     max-height: 110px;
     padding: 15px;
@@ -153,10 +155,8 @@ $hover-color: $main-brand;
   }
 
   #submit {
-    width: 502px;
-
-    padding: 0;
-    margin: -5px 0px 0px 0px;
+    box-sizing: content-box;
+    width: 100%;
 
     font-family: 'Lato', sans-serif;
     font-size: 0.875em;
