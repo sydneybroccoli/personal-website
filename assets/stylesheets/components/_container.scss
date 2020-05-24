@@ -11,9 +11,9 @@ $margin-y: 0px;
   padding: $padding-y $padding-x;
   margin: $margin-y $margin-x;
 
-  @media (min-width: 320px)  { width: 300px; }
-  @media (min-width: 480px)  { width: 465px; }
-  @media (min-width: 768px)  { width: 750px; }
-  @media (min-width: 992px)  { width: 970px; }
-  @media (min-width: 1200px) { width: 1170px; }
+  @media (min-width: 320px)  { width: calc(310px - $padding-x - $margin-x); }
+  @media (min-width: 480px)  { width: calc(465px - $padding-x - $margin-x); }
+  @media (min-width: 768px)  { width: calc(750px - $padding-x - $margin-x); }
+  @media (min-width: 992px)  { width: calc(970px - $padding-x - $margin-x); }
+  @media (min-width: 1200px) { width: calc(1170px - $padding-x - $margin-x); }
 }
