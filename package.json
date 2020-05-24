@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:start": "webpack-dev-server --open --config webpack.config.js --env.env=dev",
     "dev:build": "webpack --config webpack.config.js --env.env=dev",
-    "prod:build": "webpack --config webpack.config.js --env.env=prod",
+    "prod:build": "webpack --config webpack.config.js --env.env=prod && touch dist/CNAME && echo \"sydneybarovsky.com\" >> dist/CNAME",
     "prod:push": "git add dist --force && git commit -m \"production\" && git push origin --delete master && git subtree push --prefix dist origin master"
   },
   "repository": {
