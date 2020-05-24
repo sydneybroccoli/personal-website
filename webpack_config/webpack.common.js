@@ -69,9 +69,9 @@ module.exports = {
       filename: 'index.html',
       favicon: "./assets/images/favicon/favicon.ico",
     }),
-    new CleanWebpackPlugin(),
     new CNAMEWebpackPlugin({
       domain: 'sydneybarovsky.com'
-    })
+    }),
+    new CleanWebpackPlugin()
   ],
 };
