@@ -5,6 +5,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CSPWebpackPlugin = require('csp-webpack-plugin');
+const CNAMEWebpackPlugin = require('cname-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -69,5 +70,8 @@ module.exports = {
       favicon: "./assets/images/favicon/favicon.ico",
     }),
     new CleanWebpackPlugin(),
+    new CNAMEWebpackPlugin({
+      domain: 'sydneybarovsky.com'
+    })
   ],
 };
