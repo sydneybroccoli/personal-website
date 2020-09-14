@@ -2,7 +2,6 @@
   // FUNCTIONS
 const path = require('path');
   // PLUGINS
-const extract = require("mini-css-extract-plugin");
 const favicon= require('favicons-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
@@ -24,30 +23,28 @@ module.exports = {
   },
   module: {
     rules: [
-    // HTML PARTIALS RULES
+    // HTML RULES
     { test: /\.(html)$/,
       include: ROOT_PATH + '/assets/pages',
-      use: {
-        loader: 'html-loader',
-        options: {} 
-      } 
-      },
+      use: { loader: 'html-loader' } 
+    },
     // JAVASCRIPT RULES
     { test: /\.js$/,
       exclude: /(node_modules)/,  // ignore node_module JS files
       use: {
         loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env'] } } },
+        options: { presets: ['@babel/preset-env'] } 
+      } 
+    },
     // (S)CSS RULES
     { test:/\.(sa|sc|c)ss$/,
       use: [
-        { loader: extract.loader },   // gets all transformed CSS and extracts it into a separate single bundled file
-        { loader: 'css-loader' },     // resolves url() and @imports inside CSS
-        { loader: 'postcss-loader' }, // applies autoprefixer and minifying
-        { loader: 'sass-loader',      // transform SASS to standard CSS
+        { loader: 'style-loader' }, // outputs CSS -> <style> tag in INDEX.html
+        { loader: 'css-loader' },     // parse CSS -> JS and resolve any dependencies
+        { loader: 'sass-loader',      // SASS -> CSS
           options: { implementation: require('sass') }
-        } ]
+        } 
+      ]
     },
     // IMAGE RULES
     { test: /\.(pdf|png|jpe?g|gif|svg|ico)$/,
@@ -56,7 +53,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: ROOT_PATH + '/assets/images'
+            outputPath: ROOT_PATH + '/assets'
           }
         } ]
       },
@@ -64,12 +61,9 @@ module.exports = {
     { test: /\.(woff|woff2|ttf|otf|eot)$/,
       use: [
         { loader: 'file-loader',
-          options: { outputPath: ROOT_PATH + '/assets/fonts' } } ] }
+          options: { outputPath: ROOT_PATH + '/assets' } } ] }
     ] },
   plugins: [
-    new extract({
-      filename: 'bundle.css'
-    }),
     new HTMLWebpackPlugin({
       title: 'SYDNEY BAROVSKY PORTFOLIO',
       template: ROOT_PATH + '/src/index.html',
