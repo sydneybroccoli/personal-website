@@ -1,32 +1,37 @@
+// IMPORTS
+  // FUNCTIONS
 const path = require('path');
+  // PLUGINS
 const extract = require("mini-css-extract-plugin");
 const favicon= require('favicons-webpack-plugin');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin')
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CSPWebpackPlugin = require('csp-webpack-plugin');
 const CNAMEWebpackPlugin = require('cname-webpack-plugin');
 
+// VARIABLES
 const ROOT_PATH = path.resolve(__dirname, '../');
 
 module.exports = {
   entry: {
-    main: './src/index.js'
+    main: ROOT_PATH + '/src/index.js'
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '../dist'),
+    path: ROOT_PATH + '/dist',
     publicPath: '/'
   },
   module: {
     rules: [
     // HTML PARTIALS RULES
     { test: /\.(html)$/,
-      include: path.resolve(__dirname, './assets/pages'),
+      include: ROOT_PATH + '/assets/pages',
       use: {
         loader: 'html-loader',
-        options: {
-          interpolate: true } } },
+        options: {} 
+      } 
+      },
     // JAVASCRIPT RULES
     { test: /\.js$/,
       exclude: /(node_modules)/,  // ignore node_module JS files
@@ -51,7 +56,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: './assets/images'
+            outputPath: ROOT_PATH + '/assets/images'
           }
         } ]
       },
@@ -59,7 +64,7 @@ module.exports = {
     { test: /\.(woff|woff2|ttf|otf|eot)$/,
       use: [
         { loader: 'file-loader',
-          options: { outputPath: './assets/fonts' } } ] }
+          options: { outputPath: ROOT_PATH + '/assets/fonts' } } ] }
     ] },
   plugins: [
     new extract({
@@ -67,9 +72,9 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       title: 'SYDNEY BAROVSKY PORTFOLIO',
-      template: './src/index.html',
+      template: ROOT_PATH + '/src/index.html',
       filename: 'index.html',
-      favicon: "./assets/images/favicon/favicon.ico",
+      favicon: ROOT_PATH + '/assets/images/favicon/favicon.ico',
     }),
     new CNAMEWebpackPlugin({
       domain: 'sydneybarovsky.com'
