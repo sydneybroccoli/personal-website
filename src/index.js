@@ -1,5 +1,6 @@
 // IMPORT JS LIBRARIES
 import _ from 'lodash';
+const path = require('path');
 
 // IMPORT FILES
 
