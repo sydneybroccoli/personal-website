@@ -48,7 +48,9 @@ module.exports = {
           options: {
             limit: 8192,
             esModule: false,
-            fallback: 'file-loader'
+            fallback: 'file-loader',
+            name: '[name].[ext]',
+            // outputPath: ROOT_PATH + '/assets'
           }
         } ]
       }
