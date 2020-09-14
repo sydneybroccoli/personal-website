@@ -44,10 +44,11 @@ module.exports = {
     { test: /\.(pdf|png|jpe?g|gif|svg|ico|woff|woff2|ttf|otf|eot)$/,
       use: [
         {
-          loader: 'file-loader',
+          loader: 'url-loader',
           options: {
-            name: '[name].[ext]',
-            outputPath: ROOT_PATH + '/assets'
+            limit: 8192,
+            esModule: false,
+            fallback: 'file-loader'
           }
         } ]
       }
