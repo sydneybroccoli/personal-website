@@ -7,6 +7,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CSPWebpackPlugin = require('csp-webpack-plugin');
 const CNAMEWebpackPlugin = require('cname-webpack-plugin');
 
+const ROOT_PATH = path.resolve(__dirname, '../');
+
 module.exports = {
   entry: {
     main: './src/index.js'
