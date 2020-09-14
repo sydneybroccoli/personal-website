@@ -26,7 +26,8 @@ module.exports = {
     // HTML RULES
     { test: /\.(html)$/,
       include: ROOT_PATH + '/assets/pages',
-      loader: 'html-loader'
+      loader: 'html-loader',
+      options: { interpolate: true }
     },
     // JAVASCRIPT RULES
     { test: /\.js$/,
