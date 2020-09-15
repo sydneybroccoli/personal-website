@@ -27,7 +27,10 @@ module.exports = {
     { test: /\.(html)$/,
       include: ROOT_PATH + '/assets/pages',
       loader: 'html-loader',
-      options: { interpolate: true }
+      options: { 
+        interpolate: true,
+        attrs: [ 'img:src', 'object:data', 'embed:src' ], 
+      }
     },
     // JAVASCRIPT RULES
     { test: /\.js$/,
