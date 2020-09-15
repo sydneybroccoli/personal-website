@@ -13,12 +13,21 @@ $body-font: "Alegreya", "Roboto Slab", "serif";
   line-height: 41px;
   text-transform: uppercase;
 }
+.font-header { @include font-header; }
 
 @mixin font-body {
   font-family: "Alegreya", "Roboto Slab", "serif";
   font-style: normal;
   font-size: 20px;
 }
+.font-body { @include font-body; }
+
+@mixin font-aside {
+  font-family: monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.font-aside { @include font-aside; }
 
 // DEFINE OTHER FONT CLASSES
 .font-center { text-align: center; }
