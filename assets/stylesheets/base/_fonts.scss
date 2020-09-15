@@ -1,6 +1,6 @@
 // IMPORT GOOGLE FONTS
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Roboto+Slab:wght@300;400&display=swap');
 
 $header-font: "Questrial", "Roboto", "sans-serif";
 $body-font: "Alegreya", "Roboto Slab", "serif";
@@ -16,9 +16,10 @@ $body-font: "Alegreya", "Roboto Slab", "serif";
 .font-header { @include font-header; }
 
 @mixin font-body {
-  font-family: "Alegreya", "Roboto Slab", "serif";
+  font-family: "Roboto Slab", "serif";
   font-style: normal;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 18px;
 }
 .font-body { @include font-body; }
 
@@ -37,3 +38,5 @@ $body-font: "Alegreya", "Roboto Slab", "serif";
 
 .font-italic { font-style: italic; }
 .font-bold { font-style: bold; }
+.font-400 { font-weight: 400; }
+

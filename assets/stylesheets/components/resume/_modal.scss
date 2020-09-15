@@ -22,7 +22,7 @@
 }
 
 .close {
-  color: #aaa;
+  color: $light-accent;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -30,7 +30,7 @@
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: $dark-accent;
   text-decoration: none;
   cursor: pointer;
 }

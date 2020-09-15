@@ -1,0 +1,9 @@
+a.link {
+  @include font-aside;
+  text-decoration: none;
+  color: $light-accent;
+
+  &:hover {
+    color: $dark-accent;
+  }
+}
