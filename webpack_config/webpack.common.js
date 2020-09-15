@@ -29,7 +29,7 @@ module.exports = {
       loader: 'html-loader',
       options: { 
         interpolate: true,
-        attrs: [ 'img:src', 'object:data', 'embed:src' ], 
+        attrs: [ 'a:href', 'img:src', 'object:data', 'embed:src' ], 
       }
     },
     // JAVASCRIPT RULES
