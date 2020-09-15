@@ -61,10 +61,10 @@ const updatePaginate = (slider, slides, paginations) => {
 // SLIDER FUNCTIONS
 const toggleSlider = (slider, paginations) => {
   // SLIDER onClick
-  slider.selector.addEventListener('click', (e) => {
-    e.preventDefault();
-    slider.next(1);  // GO TO NEXT SLIDE
-  });
+  // slider.selector.addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   slider.next(1);  // GO TO NEXT SLIDE
+  // });
   // PAGINATE onClick
   selectPaginate(slider, paginations);
 }
