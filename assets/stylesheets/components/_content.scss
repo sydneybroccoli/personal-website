@@ -19,12 +19,14 @@
     }
     .sub-content {
       grid-area: content;
+      width: calc(100% - 15px);
       overflow-y: auto;
     }
     .footer {
       grid-area: footer;
     }
 }
+
 .section-header {
   text-align: center;
   padding-left: 1em;  // so the headers are actually centered
@@ -35,4 +37,3 @@
   @media (min-width: 992px)  { letter-spacing: 0.75em; }
   @media (min-width: 1200px) { letter-spacing: 1em; }
 }
-
