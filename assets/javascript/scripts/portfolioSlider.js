@@ -6,9 +6,9 @@ export const slider = () => {
   const paginations = document.querySelectorAll('.pagination-item');
 
     // INITIALIZE SLIDER
-  const projectSlider = new Siema({
+  const siema = new Siema({
     selector: '.siema',
-    duration: 200,
+    duration: 500,
     easing: 'ease-out',
     perPage: 1,
     startIndex: 0,
@@ -17,35 +17,59 @@ export const slider = () => {
     threshold: 20,
     loop: true,
     rtl: false,
-    onInit: () => {},
+    onInit: () => {
+
+    },
     onChange: () => {
-      updatePaginate(projectSlider, paginations);  // UPDATE PAGINATE
+      updatePaginate(siema, paginations);  // UPDATE PAGINATE
     },
   });
 
-  // SLIDER-ACTION
-    // onClick
-  slider.addEventListener('click', (e) => {
-    projectSlider.next(1);  // GO TO CORRECT SLIDE
-  })
+  // AUTOPLAY
+  autoplaySlider(siema, 2500);
 
-  // PAGINATE-ACTION
+  // TOGGLE SLIDER
+  // will go to next slide onClick of slider and will go to corresponding slide depending on paginate selected.
+  toggleSlider(siema, paginations);
+
+} // END OF EXPORTED FUNCTION
+
+// **************************************************************************//
+
+// PAGINATE FUNCTIONS
+const selectPaginate = (slider, paginations) => {
   paginations.forEach((item, index) => {
-    // PAGINATE ITEM onClick
     item.firstChild.addEventListener('click', (e) => {
       e.preventDefault();
-      projectSlider.goTo(index);  // GO TO CORRECT SLIDE
+      slider.goTo(index);  // GO TO SELECTED SLIDE
     });
   });
-
 }
 
 const updatePaginate = (slider, paginations) => {
   // REMOVE ACTIVE FROM ALL PAGINATE
   paginations.forEach((item) => item.classList.remove('active') );
-
   // ADD ACTIVE TO THE CURRENT SLIDE
   let index = slider.currentSlide;
-  console.log(index)
   paginations[index].classList.add('active');
+}
+
+// SLIDER FUNCTIONS
+const toggleSlider = (slider, paginations) => {
+  // SLIDER onClick
+  slider.selector.addEventListener('click', (e) => {
+    e.preventDefault();
+    slider.next(1);  // GO TO NEXT SLIDE
+  });
+  // PAGINATE onClick
+  selectPaginate(slider, paginations);
+}
+
+const autoplaySlider = (slider, interval) => {
+  let autoplay = setInterval( () => slider.next(1), interval );
+  // PAUSE ON HOVER
+  // will pause the autoplay when the user mouse is over the slider div ONLY
+  slider.selector.addEventListener( 'mouseover', (e) => clearInterval(autoplay) );
+  slider.selector.addEventListener( 'mouseout', (e) => autoplaySlider(slider, interval) );
+  // when the recursive is called, the action is run in reverse - will need to be fixed eventually...
 }
