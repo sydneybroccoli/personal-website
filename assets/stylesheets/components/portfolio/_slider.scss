@@ -1,0 +1,32 @@
+// POSITIONING
+.slider-item {
+  .slider-item-img {}
+  .slider-item-title {}
+  .slider-item-content {}
+  .slider-item-link {}
+}
+
+// PAGINATION
+.slider-pagination ul {
+  list-style-type: none;
+  margin: 0; padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  li a {
+    color: $light-accent;
+    text-align: center;
+    padding: 0.25em;
+    text-decoration: none;
+    font-size: 50px;
+  }
+  li.active a {
+    color: $dark-accent;
+  }
+
+  li a:hover {
+    opacity: 0.75;
+    color: $dark-accent;
+  }
+}

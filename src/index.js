@@ -10,8 +10,8 @@ import './style.scss';  // import main SASS FILE
 
 // IMPORT JS PLUGINS
 // IMPORT OTHER JS SCRIPTS
-// import { loadParticles } from '../assets/javascript/scripts/init_particles.js';
 import { resumeModal } from '../assets/javascript/scripts/resumeModal.js';
+import { slider as portfolioSlider } from '../assets/javascript/scripts/portfolioSlider.js';
 
 // DEVELOPMENT MODE?
 if (process.env.NODE_ENV !== 'production') {
@@ -20,8 +20,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 // RUN FUNCTIONS
 document.addEventListener("DOMContentLoaded", function () {
-  // loadParticles();
   resumeModal();
+  portfolioSlider();
 });
 
 console.log('hello from webpacker!');
