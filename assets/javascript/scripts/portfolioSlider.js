@@ -3,6 +3,7 @@ import Siema from 'siema';
 export const slider = () => {
   // DECLARE VARIABLES
   const slider = document.querySelector('.siema');
+  const slides = document.querySelectorAll('.slider-item');
   const paginations = document.querySelectorAll('.pagination-item');
 
     // INITIALIZE SLIDER
@@ -21,12 +22,12 @@ export const slider = () => {
 
     },
     onChange: () => {
-      updatePaginate(siema, paginations);  // UPDATE PAGINATE
+      updatePaginate(siema, slides, paginations);  // UPDATE PAGINATE
     },
   });
 
   // AUTOPLAY
-  autoplaySlider(siema, 2500);
+  autoplaySlider(siema, 4000);
 
   // TOGGLE SLIDER
   // will go to next slide onClick of slider and will go to corresponding slide depending on paginate selected.
@@ -46,12 +47,15 @@ const selectPaginate = (slider, paginations) => {
   });
 }
 
-const updatePaginate = (slider, paginations) => {
-  // REMOVE ACTIVE FROM ALL PAGINATE
+const updatePaginate = (slider, slides, paginations) => {
+  // REMOVE ACTIVE CLASS
   paginations.forEach((item) => item.classList.remove('active') );
+  slides.forEach((item) => item.classList.remove('active'));
+
   // ADD ACTIVE TO THE CURRENT SLIDE
   let index = slider.currentSlide;
   paginations[index].classList.add('active');
+  slides[index].classList.add('active');
 }
 
 // SLIDER FUNCTIONS

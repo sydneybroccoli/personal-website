@@ -6,6 +6,34 @@
   .slider-item-link {}
 }
 
+// STYLING
+$slider-height: auto;
+$slider-width: 66%;
+
+.slider-item {
+  opacity: 0;
+  
+  &.active {
+    opacity: 1.0;
+  }
+}
+.slider-item-img {
+  position: relative;
+  height: $slider-height; width: $slider-width;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    left: 50%; top: 50%;
+    height: $slider-height;
+
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+}
+
 // PAGINATION
 .slider-pagination ul {
   list-style-type: none;
@@ -20,6 +48,7 @@
     padding: 0.25em;
     text-decoration: none;
     font-size: 50px;
+
   }
   li.active a {
     color: $dark-accent;
