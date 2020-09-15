@@ -25,3 +25,11 @@ $btn-margin: (100% - $btn-width) / 2;
     color: $light-shade;
   }
 }
+
+.shield {
+  opacity: 0.9;
+
+  &.link:hover { // opacity change on hover ONLY if it is ALSO A LINK
+    opacity: 0.75;
+  }
+}
