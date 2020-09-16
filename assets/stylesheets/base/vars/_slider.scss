@@ -1,0 +1,65 @@
+// $slider-width: 100%;
+// $slider-height: calc(#{$slider-width} * 35%);
+// $slider-x: calc(#{$slider-height} * 2%); 
+// $slider-y: calc(#{$slider-height} * 4%);
+// $slider-xx: calc(#{$slider-height} * 4%); 
+// $slider-yy: calc(#{$slider-height} * 2%); 
+
+// $content-height: calc(#{$slider-height} - calc(2 * #{$slider-x}));
+// $content-width: calc(#{$slider-height} - calc(2 * #{$slider-y}));
+
+// $img-height: calc(#{$content-height} * 90%); $img-width: auto;   
+
+// $title-height: max-height(calc( calc(#{$content-height} - #{$slider-xx}) * 33% )); 
+// $title-width: max-width(calc(#{$content-width} * 45%));
+
+// $desc-height: max-height(calc( calc(#{$content-height} - #{$slider-xx}) * 66% ));
+// $desc-width: max-width(calc(#{$content-width} - calc(#{$img-width} + #{slider-yy})));
+
+// $link-height: max-height(calc(#{$slider-height} * 10%)); 
+// $link-width: calc(#{$content-width} * 33%); 
+
+// @media (min-width: 320px)  { $slider-width: 295px; }
+// @media (min-width: 480px)  { $slider-width: 450px; }
+// @media (min-width: 768px)  { $slider-width: 735px; }
+// @media (min-width: 992px)  { $slider-width: 955px; }
+// @media (min-width: 1200px) { $slider-width: 1155px; }
+// @media (min-width: 1500px) { $slider-width: 1235px; }
+
+// @media (min-width: 320px)  { 
+//   // SLIDER WIDTH: 295px
+//   $slider-height: 200px;
+//   $slider-x: 5px; $slider-y: 10px;
+//   $slider-xx: 2px; $slider-yy: 5px; 
+// }
+// @media (min-width: 480px)  {
+//   // SLIDER WIDTH: 450px 
+//   $slider-height: 200px;
+//   $slider-x: 5px; $slider-y: 10px;
+//   $slider-xx: 2px; $slider-yy: 5px; 
+// }
+// @media (min-width: 768px)  { 
+//   // SLIDER WIDTH: 735px
+//   $slider-height: 325px;
+//   $slider-x: 8px; $slider-y: 16px;
+//   $slider-xx: 4px; $slider-yy: 8px;
+// }
+// @media (min-width: 992px)  { 
+//   // SLIDER WIDTH: 955px
+//   $slider-height: 375px;
+//   $slider-x: 8px; $slider-y: 16px;
+//   $slider-xx: 4px; $slider-yy: 8px; 
+// }
+// @media (min-width: 1200px) {
+//   // SLIDER WIDTH: 1155px
+//   $slider-height: 400px;
+//   $slider-x: 10px; $slider-y: 20px;
+//   $slider-xx: 5px; $slider-yy: 10px;  
+// }
+
+// @media (min-width: 1500px) {
+//   // SLIDER WIDTH: 1235px
+//   $slider-height: 450px;
+//   $slider-x: 10px; $slider-y: 20px;
+//   $slider-xx: 5px; $slider-yy: 10px;
+// }
