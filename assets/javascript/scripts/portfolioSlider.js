@@ -2,30 +2,63 @@ import Siema from 'siema';
 import { initSiema } from './init_siema';
 
 // DECLARE VARIABLES
-const slider = document.querySelector('.siema.slider-content');
-const slides = document.querySelectorAll('.slide-item');
-const paginations = document.querySelectorAll('.paginate-item');
+const siemas = document.querySelectorAll('.siema');
+const paginators = document.querySelectorAll('ul.paginator li.paginator-item');
+const projs = [
+  {
+    project_id: 1,
+    siema: null,
+    slider: document.querySelector('#project-1 .siema'),
+    items: document.querySelectorAll('#project-1 .siema-item'),
+  },
+  {
+    project_id: 2,
+    siema: null,
+    slider: document.querySelector('#project-2 .siema'),
+    items: document.querySelectorAll('#project-2 .siema-item'),
+  },
+  {
+    project_id: 3,
+    siema: null,
+    slider: document.querySelector('#project-3 .siema'),
+    items: document.querySelectorAll('#project-3 .siema-item'),
+  },
+];
 
 export const output = () => {
-  // INITIALIZE SIEMA
-  const siema = initSiema( '.siema.slider-content', siema_onChange, siema_onInit );
-  siema.init();
-  console.log(siema)
-
-  // AUTOPLAY
-  autoplaySlider(siema, 4000);
-
-  // TOGGLE SLIDER
-  // will go to next slide onClick of slider and will go to corresponding slide depending on paginate selected.
-  toggleSlider(siema, paginations);
+  for(const siema of siemas) {
+    new Siema({
+    selector: siema,
+    loop: true,
+    duration: 1000,
+    perPage: 1
+  });
+  }
 }
 
 // **************************************************************************//
 
-// INITIALIZE SIEMA CALLBACKS
-const siema_onInit = () => {}
-const siema_onChange = () => {
-  updatePaginate(sieam, paginations);
+// SIEMA FUNCTIONS
+const createSiemas = ( projs ) => {
+// ITERATE THROUGH PROJECTS
+  // for each project, do...
+  projs.forEach( (proj, index) => {
+    if (proj.items.length > 1) {
+      // init IMG SIEMA
+      const selector = `#project-${index + 1} .siema`;
+      proj.siema = initSiema(selector, siema_onChange, siema_onInit);
+      proj.siema.init();
+
+      // init AUTOPLAY
+      setInterval( () => proj.siema.next(), 4000 );
+    }
+  });
+  console.log(projs)
+
+
+  // INITIALIZE SIEMA CALLBACKS
+  const siema_onInit = () => {}
+  const siema_onChange = () => {}
 }
 
 // PAGINATE FUNCTIONS
@@ -58,11 +91,11 @@ const toggleSlider = (slider, paginations) => {
   selectPaginate(slider, paginations);
 }
 
-const autoplaySlider = (slider, interval) => {
-  let autoplay = setInterval( () => slider.next(1), interval );
+const autoplaySlider = (siema, interval) => {
+  let autoplay = setInterval( () => siema.next(), interval );
   // PAUSE ON HOVER
   // will pause the autoplay when the user mouse is over the slider div ONLY
-  slider.selector.addEventListener( 'mouseover', (e) => clearInterval(autoplay) );
-  slider.selector.addEventListener( 'mouseout', (e) => autoplaySlider(slider, interval) );
+  siema.selector.addEventListener( 'mouseover', (e) => clearInterval(autoplay) );
+  siema.selector.addEventListener( 'mouseout', (e) => autoplaySlider(siema, interval) );
   // when the recursive is called, the action is run in reverse - will need to be fixed eventually...
 }

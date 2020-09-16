@@ -1,71 +1,12 @@
 // DECLARE VARIABLES
-  // IMAGES
-$project-1-img: url(../assets/images/portfolio-rightdose.jpg);
-$project-2-img: url(../assets/images/portfolio-milehigh.jpg);
-$project-3-img: url(../assets/images/portfolio/mister-cocktail/homepage.png);
-
-  // DYNAMIC VARIABLES
-
-// POSITIONING
-// .slider-item {
-//   position: relative;
-
-//   .slider-item-title {
-//     z-index: 1;
-//     position: absolute;
-//     left: 0; top: 0;
-//   }
-
-//   .slider-item-desc {
-//     z-index: 1;
-//     position: absolute;
-//     left: 0; top: 0;
-//   }
-
-//   .slider-item-link {
-//     z-index: 1;
-//     position: absolute;
-//     left: 0; top: 0;
-//   }
-
-//   .slider-item-img {
-//     z-index: 0;
-//     position: absolute;
-//     left: 0; top: 0;
-//   }
-// }
+.siema img {
+  height: 150px; width: 100%;
+  object-fit: cover;
+}
   
-// STYLING
-.slider-container {
-  color: $light-shade;
-  background-color: $dark-shade;
-}
-
-// .slider-item {
-//   opacity: 0;
-//   &.active { opacity: 1.0; }
-// }
-.slider-item-title {
-  font-family: $mono-font;
-  font-size: 40px;
-  letter-spacing: 5px;
-}
-.slider-item-desc {
-
-}
-.slider-item-link {
-}
-.slider-item-img {
-  opacity: 0.75;
-  overflow: hidden;
-  img {
-    height: 100%; width: 100%;
-    object-fit: cover;
-  }
-}
 
 // PAGINATION
-.slider-pagination ul {
+.slider-paginatior ul {
   margin: 0; padding: 0;
 
   list-style-type: none;
