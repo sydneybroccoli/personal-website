@@ -1,8 +1,8 @@
-$slider-width-breakpoint: {
-  320px: 295px,
-  480px: 450px,
-  768px: 735px,
-  992px: 955px,
-  1200px: 1155px,
-  1500px: 1235px
-}
+$container-width: null;
+
+@media (min-width: 320px)  { $container-width: 295px; }
+@media (min-width: 480px)  { $container-width: 450px; }
+@media (min-width: 768px)  { $container-width: 735px; }
+@media (min-width: 992px)  { $container-width: 955px; }
+@media (min-width: 1200px) { $container-width: 1155px; }
+@media (min-width: 1500px) { $container-width: 1235px; }

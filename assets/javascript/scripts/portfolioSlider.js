@@ -1,30 +1,16 @@
 import Siema from 'siema';
+import { initSiema } from './init_siema';
 
-export const slider = () => {
-  // DECLARE VARIABLES
-  const slider = document.querySelector('.siema');
-  const slides = document.querySelectorAll('.slider-item');
-  const paginations = document.querySelectorAll('.pagination-item');
+// DECLARE VARIABLES
+const slider = document.querySelector('.siema.slider-content');
+const slides = document.querySelectorAll('.slide-item');
+const paginations = document.querySelectorAll('.paginate-item');
 
-    // INITIALIZE SLIDER
-  const siema = new Siema({
-    selector: '.siema',
-    duration: 500,
-    easing: 'ease-out',
-    perPage: 1,
-    startIndex: 0,
-    draggable: true,
-    multipleDrag: false,
-    threshold: 20,
-    loop: true,
-    rtl: false,
-    onInit: () => {
-
-    },
-    onChange: () => {
-      updatePaginate(siema, slides, paginations);  // UPDATE PAGINATE
-    },
-  });
+export const output = () => {
+  // INITIALIZE SIEMA
+  const siema = initSiema( '.siema.slider-content', siema_onChange, siema_onInit );
+  siema.init();
+  console.log(siema)
 
   // AUTOPLAY
   autoplaySlider(siema, 4000);
@@ -32,10 +18,15 @@ export const slider = () => {
   // TOGGLE SLIDER
   // will go to next slide onClick of slider and will go to corresponding slide depending on paginate selected.
   toggleSlider(siema, paginations);
-
-} // END OF EXPORTED FUNCTION
+}
 
 // **************************************************************************//
+
+// INITIALIZE SIEMA CALLBACKS
+const siema_onInit = () => {}
+const siema_onChange = () => {
+  updatePaginate(sieam, paginations);
+}
 
 // PAGINATE FUNCTIONS
 const selectPaginate = (slider, paginations) => {
@@ -47,15 +38,13 @@ const selectPaginate = (slider, paginations) => {
   });
 }
 
-const updatePaginate = (slider, slides, paginations) => {
+const updatePaginate = (slider, paginations) => {
   // REMOVE ACTIVE CLASS
   paginations.forEach((item) => item.classList.remove('active') );
-  slides.forEach((item) => item.classList.remove('active'));
 
   // ADD ACTIVE TO THE CURRENT SLIDE
   let index = slider.currentSlide;
   paginations[index].classList.add('active');
-  slides[index].classList.add('active');
 }
 
 // SLIDER FUNCTIONS

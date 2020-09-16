@@ -1,83 +1,50 @@
 // DECLARE VARIABLES
-$slider-width: null;
-$slider-height: null; 
-
-.slider-content{
-  width: 100%;
-  $slider-width: 1235px;
-  $slider-height: calc(#{$slider-width} / 3); 
-}
-
-$slider-x: calc(#{$slider-height} * 2%); 
-$slider-y: calc(#{$slider-height} * 4%);
-$slider-xx: calc(#{$slider-height} * 4%); 
-$slider-yy: calc(#{$slider-height} * 2%); 
-
-$content-height: calc(#{$slider-height} - calc(2 * #{$slider-x}));
-$content-width: calc(#{$slider-height} - calc(2 * #{$slider-y}));
-
-$img-height: calc(#{$content-height} * 90%); $img-width: auto;   
-
-$title-height: calc( calc(#{$content-height} - #{$slider-xx}) * 33% ); 
-$title-width: calc(#{$content-width} * 45%);
-
-$desc-height: calc( calc(#{$content-height} - #{$slider-xx}) * 66% );
-$desc-width: calc(#{$content-width} - calc(#{$img-width} + #{slider-yy}));
-
-$link-height: calc(#{$slider-height} * 10%); 
-$link-width: calc(#{$content-width} * 33%);
-
   // IMAGES
 $project-1-img: url(../assets/images/portfolio-rightdose.jpg);
 $project-2-img: url(../assets/images/portfolio-milehigh.jpg);
 $project-3-img: url(../assets/images/portfolio/mister-cocktail/homepage.png);
-  
+
+  // DYNAMIC VARIABLES
+
 // POSITIONING
-.slider-item {
-  position: relative;
+// .slider-item {
+//   position: relative;
 
-  height: $slider-height; width: $slider-width;
+//   .slider-item-title {
+//     z-index: 1;
+//     position: absolute;
+//     left: 0; top: 0;
+//   }
 
-  .slider-item-title {
-    z-index: 10;
-    position: absolute;
-    left: $slider-x; top: $slider-y;
+//   .slider-item-desc {
+//     z-index: 1;
+//     position: absolute;
+//     left: 0; top: 0;
+//   }
 
-    height: $title-height; width: $title-width;
-  }
-  .slider-item-desc {
-    z-index: 10;
-    position: absolute;
-    left: $slider-x; bottom: $slider-y;
+//   .slider-item-link {
+//     z-index: 1;
+//     position: absolute;
+//     left: 0; top: 0;
+//   }
 
-    height: $desc-height; width: $desc-width;
-  }
-  .slider-item-link {
-    z-index: 10;
-    position: absolute;
-    right: 25%; bottom: 0;
-
-    height: $link-height; width: $link-width;
-  }
-  .slider-item-img {
-    z-index: 5;
-    position: absolute;
-    left: 35%; top: calc(#{$slider-y} + 40px);
-
-    height: $img-height; width: $img-width;
-  }
-}
-
+//   .slider-item-img {
+//     z-index: 0;
+//     position: absolute;
+//     left: 0; top: 0;
+//   }
+// }
+  
 // STYLING
 .slider-container {
   color: $light-shade;
   background-color: $dark-shade;
 }
 
-.slider-item {
-  opacity: 0;
-  &.active { opacity: 1.0; }
-}
+// .slider-item {
+//   opacity: 0;
+//   &.active { opacity: 1.0; }
+// }
 .slider-item-title {
   font-family: $mono-font;
   font-size: 40px;
