@@ -11,7 +11,7 @@ import './style.scss';  // import main SASS FILE
 // IMPORT JS PLUGINS
 // IMPORT OTHER JS SCRIPTS
 import { resumeModal } from '../assets/javascript/scripts/resumeModal.js';
-import { output as portfolioSlider } from '../assets/javascript/scripts/portfolioSlider.js';
+import { output as portfolioSlider } from '../assets/javascript/scripts/portfolioCarousel.js';
 
 // DEVELOPMENT MODE?
 if (process.env.NODE_ENV !== 'production') {
