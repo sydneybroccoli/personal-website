@@ -10,8 +10,8 @@ import './style.scss';  // import main SASS FILE
 
 // IMPORT JS PLUGINS
 // IMPORT OTHER JS SCRIPTS
-import { resumeModal } from '../assets/javascript/scripts/resumeModal.js';
-import { output as portfolioSlider } from '../assets/javascript/scripts/portfolioCarousel.js';
+import { resumeModal } from '../assets/javascript/scripts/resume/modal.js';
+import { imgCarousel as portfolioSlider } from '../assets/javascript/scripts/portfolio/project_carousel.js';
 
 // DEVELOPMENT MODE?
 if (process.env.NODE_ENV !== 'production') {
