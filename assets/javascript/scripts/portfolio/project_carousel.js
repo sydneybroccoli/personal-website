@@ -10,6 +10,7 @@ export const imgCarousel = () => {
   // ITERATE THROUGH CAROUSELS
 
   Object.values( carousels ).map( (caro) => {
-      let glide = initCarousel( caro );
+    const glide = initCarousel( caro );
   })
+
 }

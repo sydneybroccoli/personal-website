@@ -1,32 +1,45 @@
 import Glide, { Controls, Breakpoints } from '@glidejs/glide';
 
-export const initCarousel = (selector, autoplay_duration = 5000) => {
+const AUTOPLAY_LENGTH = 5000;
+
+export const initCarousel = ( selector ) => {
   const glide = new Glide(selector, {
     type: 'carousel',
-    startAt: 0,
+    startAt: 1,
     perView: 1,
-    autoplay: autoplay_duration,
+    autoplay: false,
     hoverpause: true,
   });
 
-  // had to seperate this from the initial instance else I couldnt assign length
-  glide.on('carousel.length', (length) => {
-    glide.length = length
+  // must be written seperate from initialization
+  glide.on( 'carousel.length' , (length) => {
+    glide.length = length;
   });
 
-  glide.mount({ 
-    carousel_length
+  glide.mount({
+    carousel_length,
   });
+
+  glide.update({ autoplay: autoplayDuration(glide.length) })
 
   return glide;
 }
 
-// CUSTOM COMPONENTS
+// CUSTOM COMPONENTS/FUNCTIONS
   // CAROUSEL LENGTH (# of slides)
 const carousel_length = ( Glide, Components, Events ) => {
   return {
     mount () {
       Events.emit('carousel.length', Components.Sizes.length);
     }
+  }
+}
+  // DETERMINE AUTOPLAY
+  // autoplay if the number of slides is greater than 1
+const autoplayDuration = ( caroLength ) => {
+  if ( caroLength > 1 ) { 
+    return AUTOPLAY_LENGTH; 
+  } else { 
+    return false; 
   }
 }
