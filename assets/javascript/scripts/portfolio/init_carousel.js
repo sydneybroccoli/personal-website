@@ -25,7 +25,7 @@ export const initCarousel = ( selector ) => {
   return glide;
 }
 
-// CUSTOM COMPONENTS/FUNCTIONS
+// CUSTOM COMPONENTS
   // CAROUSEL LENGTH (# of slides)
 const carousel_length = ( Glide, Components, Events ) => {
   return {
@@ -34,6 +34,8 @@ const carousel_length = ( Glide, Components, Events ) => {
     }
   }
 }
+
+// CUSTOM FUNCTIONS
   // DETERMINE AUTOPLAY
   // autoplay if the number of slides is greater than 1
 const autoplayDuration = ( caroLength ) => {

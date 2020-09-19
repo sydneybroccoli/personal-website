@@ -1,6 +1,3 @@
-// IMPORT
-  // LIBRARIES
-  // FUNCTIONS
 import { initCarousel } from './init_carousel.js'; //selector, autoplay_dur
 
 // DECLARE VARIABLES

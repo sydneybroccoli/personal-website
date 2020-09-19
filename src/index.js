@@ -11,7 +11,7 @@ import './style.scss';  // import main SASS FILE
 // IMPORT JS PLUGINS
 // IMPORT OTHER JS SCRIPTS
 import { resumeModal } from '../assets/javascript/scripts/resume/modal.js';
-import { imgCarousel as portfolioSlider } from '../assets/javascript/scripts/portfolio/project_carousel.js';
+import {  output as projectActions } from '../assets/javascript/scripts/portfolio/project.js';
 
 // DEVELOPMENT MODE?
 if (process.env.NODE_ENV !== 'production') {
@@ -21,7 +21,7 @@ if (process.env.NODE_ENV !== 'production') {
 // RUN FUNCTIONS
 document.addEventListener("DOMContentLoaded", function () {
   resumeModal();
-  portfolioSlider();
+  projectActions();
 });
 
 console.log('hello from webpacker!');
