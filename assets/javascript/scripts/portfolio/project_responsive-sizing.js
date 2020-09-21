@@ -42,7 +42,7 @@ const calcContent = ( obj ) => {
 const calcSubContent = ( obj ) => {
   return Object.assign(obj, {
     img: {
-      width: 'auto',
+      width: obj.content.width * 0.60,
       height: obj.content.height * 0.90,
     },
 

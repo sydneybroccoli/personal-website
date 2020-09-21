@@ -1,0 +1,54 @@
+$height: 500px; $width: 100%;
+$pad-x: calc(15px + 2%); $pad-y: 4%;
+$pad-xx: 1%;
+
+// POSITIONING
+.project-item {
+  border: 1px solid black;
+  position: relative;
+  height: $height; width: $width;
+  padding: $pad-x $pad-y;
+}
+
+.project-id {
+  z-index: 10;
+  border: 1px solid black;
+  position: absolute;
+  right: $pad-x; top: $pad-y;
+}
+.project-title {
+  z-index: 10;
+  border: 1px solid black;
+  position: absolute;
+  left: $pad-x; top: $pad-y;
+  height: 30%; max-width: 45%;
+}
+.project-desc {
+  z-index: 10;
+  border: 1px solid black;
+  position: absolute;
+  left: $pad-x; bottom: $pad-y;
+  height: 60%; max-width: calc(100% - calc(65% + calc(#{$pad-xx} + calc(#{$pad-x} * 2))));
+}
+.project-link {
+  z-index: 10;
+  border: 1px solid black;
+  position: absolute;
+  right: calc(#{$pad-x} + 17.5%); bottom: $pad-y;
+  max-height: 25%; width: 30%;
+}
+.project-img {
+  z-index: 5;
+  border: 1px solid black;
+  position: absolute;
+  right: $pad-x; bottom: calc(#{$pad-y} * 2);
+  height: auto; width: 65%;
+
+  img {
+    border: 1px solid black;
+    height: 100%; width: 100%;
+    object-fit: crop;
+  }
+}
+
+// STYLING
