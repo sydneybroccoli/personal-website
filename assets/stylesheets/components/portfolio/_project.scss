@@ -1,54 +1,107 @@
-$height: 500px; $width: 100%;
-$pad-x: calc(15px + 2%); $pad-y: 4%;
-$pad-xx: 1%;
+// VARIABLE - will need updating using JS for responsiveness!
+$height: 500px;
+$title-height: 72px;
+$img-width: 65%;
+
+// CONSTANT
+$width: 100%;
+$pad-x: calc(15px + 2%); 
+$pad-y: 4%;
+$pad-xx: 1%; 
+$pad-yy: 2%;
 
 // POSITIONING
+.no-space { margin: 0; padding: 0; }
+
 .project-item {
-  border: 1px solid black;
+  box-sizing: border-box;  // else will be larger than parent
   position: relative;
   height: $height; width: $width;
-  padding: $pad-x $pad-y;
+  padding: $pad-y $pad-x;
+  margin: 15px 0;
 }
 
 .project-id {
   z-index: 10;
-  border: 1px solid black;
   position: absolute;
   right: $pad-x; top: $pad-y;
 }
 .project-title {
   z-index: 10;
-  border: 1px solid black;
   position: absolute;
-  left: $pad-x; top: $pad-y;
-  height: 30%; max-width: 45%;
+  left: $pad-x; top: calc(15px + #{$pad-y});
+  height: 30%; max-width: 50%;
 }
 .project-desc {
   z-index: 10;
-  border: 1px solid black;
   position: absolute;
   left: $pad-x; bottom: $pad-y;
-  height: 60%; max-width: calc(100% - calc(65% + calc(#{$pad-xx} + calc(#{$pad-x} * 2))));
+  min-height: 60%; 
+  max-width: calc(100% - calc(65% + calc(#{$pad-xx} + calc(#{$pad-x} * 2))));
 }
 .project-link {
   z-index: 10;
-  border: 1px solid black;
   position: absolute;
   right: calc(#{$pad-x} + 17.5%); bottom: $pad-y;
   max-height: 25%; width: 30%;
+  padding: 5px 0;
+
+  a {}
 }
 .project-img {
   z-index: 5;
-  border: 1px solid black;
   position: absolute;
-  right: $pad-x; bottom: calc(#{$pad-y} * 2);
+  right: $pad-x; bottom: calc(#{$pad-y} * 1.5);
   height: auto; width: 65%;
 
   img {
-    border: 1px solid black;
-    height: 100%; width: 100%;
-    object-fit: crop;
+    height: auto; width: 100%;
+    object-fit: cover;
   }
 }
 
 // STYLING
+.project-item {
+  background-color: $dark-shade;
+}
+
+.project-id {
+  color: $dark-accent;
+  opacity: 0.7;
+  // -webkit-text-stroke: 1px black; // adds border to font
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 75px;
+}
+.project-title {
+  color: $light-shade; -webkit-text-stroke: 1px $dark-shade;
+  font-family: "Questrial", "Roboto", "sans-serif";
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+.project-desc {
+  color: $light-shade;
+  font-family: "Roboto Slab", "serif";
+  font-style: normal;
+  font-weight: 300;
+}
+.project-link {
+  background-color: $dark-accent;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 15px;
+
+  a {
+    text-decoration: none;
+    color: $light-shade;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+}
+.project-img {
+  img {
+
+  }
+}
