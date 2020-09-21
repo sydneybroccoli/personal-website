@@ -75,14 +75,17 @@ $pad-yy: 2%;
 }
 .project-title {
   color: $light-shade; -webkit-text-stroke: 1px $dark-shade;
-  font-family: "Questrial", "Roboto", "sans-serif";
-  font-weight: bold;
+  // font-family: "Questrial", "Roboto", "sans-serif";
+  font-family: monospace;
   font-size: 60px;
+  font-weight: bold;
   letter-spacing: 3px;
 }
 .project-desc {
   color: $light-shade;
-  font-family: "Roboto Slab", "serif";
+  // font-family: "Roboto Slab", "serif";
+  font-family: monospace;
+  font-size: 15px;
   font-style: normal;
   font-weight: 300;
 }
