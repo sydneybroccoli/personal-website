@@ -14,66 +14,39 @@
 </head>
 
 <body>
-  <section class="hero" id="top">
-    <%= require('../assets/pages/_hero.html') %>
-  </section>
 
-  <section class="content" id="content">
-    <div class="hero container navbar header">
-      <ul class="list-inline d-flex f-jc-evenly">
-<!--         <li><a href="#about">ABOUT ME</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li> -->
-        <li><a href="#top">
-          <i class="fas fa-angle-double-up"></i>
-          <!-- <img
-            src="./assets/images/favicon/favicon-32x32.jpg"
-            alt="Sydney Barovsky favicon"> -->
-        </a></li>
-<!--         <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#contact">CONTACT ME</a></li> -->
-      </ul>
-    </div>
+  <%= require('../assets/pages/_header.html') %>
 
-    <div class="sub-content">
-      <div class="container" id="about">
-        <h1 class="font-header section-header">MY STORY</h1>
-        <%= require('../assets/pages/_about.html') %>
-        <br>
-        <%= require('../assets/pages/_resume.html') %>
-      </div>
-
-      <div class="container" id="portfolio">
-        <h1 class="font-header section-header">PORTFOLIO</h1>
-        <%= require('../assets/pages/_portfolio.html') %>
-      </div>
-
-      <div class="container" id="contact">
-        <h1 class="font-header section-header">CONTACT ME</h1>
-        <%= require('../assets/pages/_contact.html') %>
-      </div>
-    </div>
-
-    <div class="hero container navbar footer">
-      <ul class="list-inline d-flex f-jc-center">
-        <li class="social-icon">
-          <a href="https://www.linkedin.com/in/sydneybarovsky/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li class="social-icon">
-          <a href="mailto:sbarovsky@gmail.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </li>
-        <li class="social-icon">
-          <a href="https://github.com/sydneybroccoli">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-      </ul>
+  <section class="hero" id="hero">
+    <div id="hero">
+      <%= require('../assets/pages/_hero.html') %>
     </div>
   </section>
 
+  <section class="content inactive" id="about">
+    <div class="container">
+      <h1 class="font-header section-header">MY STORY</h1>
+      <%= require('../assets/pages/_about.html') %>
+      <br>
+      <%= require('../assets/pages/_resume.html') %>
+    </div>
+  </section>
+
+  <section class="content inactive" id="contact">
+    <div class="container">
+      <h1 class="font-header section-header">CONTACT ME</h1>
+      <%= require('../assets/pages/_contact.html') %>
+    </div>
+  </section>
+
+  <section class="content inactive" id="portfolio">
+    <div class="container">
+      <h1 class="font-header section-header">PORTFOLIO</h1>
+      <%= require('../assets/pages/_portfolio.html') %>
+    </div>
+  </section>
+
+  <%= require('../assets/pages/_footer.html') %>
 
 <!-- PARTICLES CONTAINER -->
 <!-- <div id="particles-js"></div> -->
