@@ -26,16 +26,11 @@ $btn-margin: (100% - $btn-width) / 2;
   }
 }
 
-a.btn {
-  text-decoration: none;
-  color: $light-shade;
+.flex-btn {
+  width: 25%;
+  margin: 0.5em;
+  padding: 0.5em;
 
-  // SIZING
-  min-width: $btn-width;
-  margin: 0.5em $btn-margin;
-  padding: 0.5em 0.5em;
-
-  // STYLING
   font-size: 1em;
   letter-spacing: 0.25em;
   text-align: center;
@@ -46,6 +41,11 @@ a.btn {
 
   &:hover {
     opacity: 0.75;
+  }
+
+  a {
+    text-decoration: none;
+    color: $light-shade;
   }
 }
 

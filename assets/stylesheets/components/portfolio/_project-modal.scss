@@ -34,7 +34,11 @@
 }
 .proj-content .proj-link {
   // POSITIONING
+  width: 100%;
   text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 
   // STYLING
   @include font-aside;
