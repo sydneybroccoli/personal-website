@@ -6,7 +6,7 @@ $hero-img-url: '../assets/images/hero-solo3.jpg';
 .hero {
   // SIZING
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 120px);
   z-index: 1;
   overflow: hidden;
 

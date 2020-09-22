@@ -17,33 +17,36 @@
 
   <%= require('../assets/pages/_header.html') %>
 
-  <section class="hero" id="top">
-    <%= require('../assets/pages/_hero.html') %>
-  </section>
-
-  <%= require('../assets/pages/_footer.html') %>
-
-  <section class="content" id="content">
-     <div class="sub-content">
-      <div class="container" id="about">
-        <h1 class="font-header section-header">MY STORY</h1>
-        <%= require('../assets/pages/_about.html') %>
-        <br>
-        <%= require('../assets/pages/_resume.html') %>
-      </div>
-
-      <div class="container" id="portfolio">
-        <h1 class="font-header section-header">PORTFOLIO</h1>
-        <%= require('../assets/pages/_portfolio.html') %>
-      </div>
-
-      <div class="container" id="contact">
-        <h1 class="font-header section-header">CONTACT ME</h1>
-        <%= require('../assets/pages/_contact.html') %>
-      </div>
+  <section class="hero" id="hero">
+    <div id="hero">
+      <%= require('../assets/pages/_hero.html') %>
     </div>
   </section>
 
+  <section class="content inactive" id="about">
+    <div class="container">
+      <h1 class="font-header section-header">MY STORY</h1>
+      <%= require('../assets/pages/_about.html') %>
+      <br>
+      <%= require('../assets/pages/_resume.html') %>
+    </div>
+  </section>
+
+  <section class="content inactive" id="contact">
+    <div class="container">
+      <h1 class="font-header section-header">CONTACT ME</h1>
+      <%= require('../assets/pages/_contact.html') %>
+    </div>
+  </section>
+
+  <section class="content inactive" id="portfolio">
+    <div class="container">
+      <h1 class="font-header section-header">PORTFOLIO</h1>
+      <%= require('../assets/pages/_portfolio.html') %>
+    </div>
+  </section>
+
+  <%= require('../assets/pages/_footer.html') %>
 
 <!-- PARTICLES CONTAINER -->
 <!-- <div id="particles-js"></div> -->

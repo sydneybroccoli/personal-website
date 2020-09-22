@@ -10,6 +10,7 @@ import './style.scss';  // import main SASS FILE
 
 // IMPORT JS PLUGINS
 // IMPORT OTHER JS SCRIPTS
+import { headerToggle } from '../assets/javascript/scripts/navigation/header.js';
 import { resumeModal } from '../assets/javascript/scripts/resume/modal.js';
 import {  output as projectActions } from '../assets/javascript/scripts/portfolio/project.js';
 
@@ -20,6 +21,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 // RUN FUNCTIONS
 document.addEventListener("DOMContentLoaded", function () {
+  headerToggle();
+  
   resumeModal();
   projectActions();
 });
