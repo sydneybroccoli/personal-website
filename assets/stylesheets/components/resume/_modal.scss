@@ -1,26 +1,8 @@
 // MODAL STYLING
-.modal {
-  display: none;
-  z-index: 10;
-
-  position: fixed;
-  left: 0;
-  top: 0;
-
-  height: 100%; width: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-}
+.modal {}
 
 // MODAL CONTENT STYLING
 .modal-content {
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  height: auto; width: 80%;
-
   object {
     height: 600px; // NEEDS TO BE RESPONSIVE
     width: 100%;
@@ -28,16 +10,6 @@
   }
 }
 
-.close {
-  color: $light-accent;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+.close {}
 .close:hover,
-.close:focus {
-  color: $dark-accent;
-  text-decoration: none;
-  cursor: pointer;
-}
+.close:focus {}
