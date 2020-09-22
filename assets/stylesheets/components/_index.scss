@@ -1,9 +1,11 @@
+// COMMON COMPONENTS
 @import "buttons";
 @import "container";
 @import "content";
 @import "hero";
 @import "navigation";
 @import "links";
+@import "modal";
 
 // ABOUT COMPONENTS
 @import "about/img";
@@ -16,9 +18,8 @@
 @import "portfolio/card";
 @import "portfolio/content";
 @import "portfolio/img";
-@import "portfolio/project";
-@import "portfolio/project-paginator";
-@import "portfolio/proj-cards";
+@import "portfolio/project-card";
+@import "portfolio/project-modal";
 
 // RESUME COMPONENTS
 @import "resume/modal";

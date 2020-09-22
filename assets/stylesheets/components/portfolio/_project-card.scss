@@ -13,7 +13,7 @@ $height: 300px; $width: 300px;
 // STYLING
 }
 
-.proj {
+.portfolio-projects .proj {
 // POSITIONING
   position: relative;
   width: $height; height: $width;
@@ -28,12 +28,12 @@ $height: 300px; $width: 300px;
     text-decoration: none;
   }
 }
-img.proj-img {
+.portfolio-projects img.proj-img {
   display: block;
   height: 100%; width: 100%;
   object-fit: cover;
 }
-.proj-content {
+.portfolio-projects .proj-content {
 // POSITIONING
   height: 90%; width: 90%;
   position: absolute;
@@ -51,7 +51,7 @@ img.proj-img {
     background-color: $main-brand;
   }
 }
-.proj-title {
+.portfolio-projects .proj-title {
 // POSITIONING
 // STYLING
   @include font-header;
@@ -64,7 +64,7 @@ img.proj-img {
   @include font-aside;
   color: $light-shade;
 }
-.proj-desc {
+.portfolio-projects .proj-desc {
 // POSITIONING
 // STYLING
   @include font-aside;

@@ -1,7 +1,7 @@
 import { toggleModal } from '../modalActions.js';
 
 export const projects_toggleModal = () => {
-  const modals = document.querySelectorAll('.projModal');
+  const modals = document.querySelectorAll('.proj-modal');
 
   modals.forEach( (modal) => {
     const proj_id = modal.id;

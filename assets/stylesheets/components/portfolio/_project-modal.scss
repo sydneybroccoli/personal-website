@@ -1,7 +1,7 @@
 // VARIABLE - will need updating using JS for responsiveness!
-$height: 500px;
+$height: auto;
 $title-height: 72px;
-$img-width: 65%;
+$img-width: 100%;
 
 // CONSTANT
 $width: 100%;
@@ -13,7 +13,7 @@ $pad-yy: 2%;
 // POSITIONING
 .no-space { margin: 0; padding: 0; }
 
-.project-item {
+.proj-modal .proj-item {
   box-sizing: border-box;  // else will be larger than parent
   position: relative;
   height: $height; width: $width;
@@ -21,26 +21,22 @@ $pad-yy: 2%;
   margin: 15px 0;
 }
 
-.project-id {
-  z-index: 10;
+.proj-modal .proj-id {
   position: absolute;
   right: $pad-x; top: $pad-y;
 }
-.project-title {
-  z-index: 10;
+.proj-modal .proj-title {
   position: absolute;
   left: $pad-x; top: calc(15px + #{$pad-y});
   height: 30%; max-width: 50%;
 }
-.project-desc {
-  z-index: 10;
+.proj-modal .proj-desc {
   position: absolute;
   left: $pad-x; bottom: $pad-y;
   min-height: 60%; 
   max-width: calc(100% - calc(65% + calc(#{$pad-xx} + calc(#{$pad-x} * 2))));
 }
-.project-link {
-  z-index: 10;
+.proj-modal .proj-link {
   position: absolute;
   right: calc(#{$pad-x} + 17.5%); bottom: $pad-y;
   max-height: 25%; width: 30%;
@@ -48,8 +44,7 @@ $pad-yy: 2%;
 
   a {}
 }
-.project-img {
-  z-index: 5;
+.proj-modal .proj-img {
   position: absolute;
   right: $pad-x; bottom: calc(#{$pad-y} * 1.5);
   height: auto; width: 65%;
@@ -61,11 +56,11 @@ $pad-yy: 2%;
 }
 
 // STYLING
-.project-item {
+.proj-modal .proj-item {
   background-color: $dark-shade;
 }
 
-.project-id {
+.proj-modal .proj-id {
   color: $dark-accent;
   opacity: 0.7;
   // -webkit-text-stroke: 1px black; // adds border to font
@@ -73,7 +68,7 @@ $pad-yy: 2%;
   font-weight: bold;
   font-size: 75px;
 }
-.project-title {
+.proj-modal .proj-title {
   color: $light-shade; -webkit-text-stroke: 1px $dark-shade;
   // font-family: "Questrial", "Roboto", "sans-serif";
   font-family: monospace;
@@ -81,7 +76,7 @@ $pad-yy: 2%;
   font-weight: bold;
   letter-spacing: 3px;
 }
-.project-desc {
+.proj-modal .proj-desc {
   color: $light-shade;
   // font-family: "Roboto Slab", "serif";
   font-family: monospace;
@@ -89,7 +84,7 @@ $pad-yy: 2%;
   font-style: normal;
   font-weight: 300;
 }
-.project-link {
+.proj-modal .proj-link {
   background-color: $dark-accent;
   text-align: center;
   text-transform: uppercase;
@@ -103,8 +98,11 @@ $pad-yy: 2%;
     letter-spacing: 3px;
   }
 }
-.project-img {
+.proj-modal .proj-img {
   img {
-
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
   }
 }
