@@ -20,7 +20,7 @@
   // STYLING
   @include font-header;
   text-align: center;
-  letter-spacing: 10px;
+  letter-spacing: 1em;
 }
 
 .proj-content {}
@@ -43,6 +43,8 @@
   // STYLING
   @include font-aside;
   font-size: 15px;
+
+  .link-repo, .link-deploy { width: 25%; }
 }
 
 
