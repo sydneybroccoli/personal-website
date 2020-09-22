@@ -26,6 +26,29 @@ $btn-margin: (100% - $btn-width) / 2;
   }
 }
 
+a.btn {
+  text-decoration: none;
+  color: $light-shade;
+
+  // SIZING
+  min-width: $btn-width;
+  margin: 0.5em $btn-margin;
+  padding: 0.5em 0.5em;
+
+  // STYLING
+  font-size: 1em;
+  letter-spacing: 0.25em;
+  text-align: center;
+
+  color: $light-shade;
+  background-color: $dark-accent;
+  border: black;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
 .shield {
   opacity: 0.9;
 
