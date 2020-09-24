@@ -4,8 +4,7 @@ $padding-y: 0px;
 $margin-x: auto;
 $margin-y: 0px;
 
-.container {
-  // value subtracted is the padding!!
+@mixin container {
   height: auto;
 
   padding: $padding-y $padding-x;
@@ -18,3 +17,9 @@ $margin-y: 0px;
   @media (min-width: 1200px) { width: calc(1170px - #{$padding-x}); }
   @media (min-width: 1500px) { width: calc(1250px - #{$padding-x}); }
 }
+
+
+.container {
+  @include container;
+}
+
