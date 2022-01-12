@@ -71,7 +71,11 @@ PRODUCTION EMPTY PUSH
 ## WEBPAGE BUILD ROUTINE
 `git add .`
 `git commit -m 'yada yada'`
-`git push origin development`
+`git push origin *branch*`
+`git checkout development`
+COMPLETE PULL REQUEST
+`git branch -d *branch`
+<br>
 `npm run prod:build`
 `npm run prod:push`
 
