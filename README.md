@@ -27,49 +27,21 @@ DEVELOPMENT
 | | webpack.dev.js
 | | webpack.prod.js
 ```
-
-BRANCH: DEVELOPMENT
-| - ASSETS
-| | - DATA
-| | - IMAGES
-| | | - FAVICON
-| | | - PORTFOLIO
-| | | - RESUME    
-| | - JAVASCRIPT
-| | | - LIBRARIES
-| | | - SCRIPTS
-| | | | -ABOUT
-| | | | -NAVIGATION
-| | | | -PORTFOLIO
-| | - PAGES
-| | - STYLESHEETS
-| | | - BASE
-| | | - COMPONENTS
-| | | - LAYOUT
-| | | - UTILS
-| | | - index.scss
-| - SRC
-| | - index.html
-| | - index.js
-| | - style.scss
-| - WEBPACK_CONFIG
-| | - webpack.common.js
-| | - webpack.dev.js
-| | - webpack.prod.js
-
 <br>
-BRANCH: MAIN
-| - CNAME
-| - SYDNEYBAROVSKYresumeFULL.pdf
-| - bundle.js
-| - bundle.js.map
-| - favicon.ico
-| - hero-solo1.jpg
-| - hero-solo3.jpg
-| - index.html
-| - mc-homepage.png
-| - mhc-homepage.png
-| - rd-homepage.png
+```
+MAIN (GH-PAGES)
+| CNAME
+| SYDNEYBAROVSKYresumeFULL.pdf
+| bundle.js
+| bundle.js.map
+| favicon.ico
+| hero-solo1.jpg
+| hero-solo3.jpg
+| index.html
+| mc-homepage.png
+| mhc-homepage.png
+| rd-homepage.png
+```
 <br><br>
 ## DEVELOPMENT
 DEVELOPMENT BUILD<br>
@@ -83,7 +55,7 @@ DEVELOPMENT "PUSH"<br>
 
 ## PRODUCTION
 PRODUCTION BUILD<br>
-`npm run prod:build`
+`npm run prod:build`<br>
 `webpack --config webpack.config.js --env.env=prod`
 <br><br>
 PRODUCTION PUSH<br>
@@ -100,17 +72,18 @@ PRODUCTION EMPTY PUSH<br>
 && git subtree push --prefix dist origin main`
 
 ### WEBPAGE BUILD ROUTINE
-`git add .`<br>
-`git commit -m 'yada yada'`<br>
-`git push origin *branch*`<br>
+1: `git add .`<br>
+2: `git commit -m 'yada yada'`<br>
+3: `git push origin *branch*`<br>
 <br>
-COMPLETE PULL REQUEST
+4: PULL REQUEST
 <br>
 <br>
-`git branch -d *branch`<br>
-`git checkout development`<br>
-`git pull origin development`<br>
+5: `git branch -d *branch`<br>
+6: `git checkout development`<br>
+7: `git pull origin development`<br>
 <br>
-`npm run prod:build`<br>
-`npm run prod:push`<br>
+8: `npm run prod:build`<br>
+9: `npm run prod:push`<br>
+10: IF YOU CANNOT COMPLETE A PUSH, YOU MAY NEED AN EMPTY PUSH TO FORCE GH-PAGES TO REBUILD <br> `npm run prod:emptypush`
 
