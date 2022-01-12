@@ -1,6 +1,33 @@
-For the next time I wait too long to work on this repository... Here is a quick walk through on how it works:
+For the next time I wait too long to work on this repository... THE BASICS!
 
 ## FILE ORGANIAZATION
+```
+DEVELOPMENT
+| .eslintrc.json
+| .gitattributes
+| .gitignore
+| package-lock.json
+| package.json
+| postcss.config.js
+| webpack.config.js
+| README.md
+| 
+| - ASSETS
+| | - DATA
+| | - IMAGES
+| | - JAVASCRIPT
+| | - PAGES
+| | - STYLESHEETS
+| - SRC
+| | index.html
+| | index.js
+| | style.scss
+| - WEBPACK_CONFIG
+| | webpack.common.js
+| | webpack.dev.js
+| | webpack.prod.js
+```
+
 BRANCH: DEVELOPMENT
 | - ASSETS
 | | - DATA
@@ -29,14 +56,7 @@ BRANCH: DEVELOPMENT
 | | - webpack.common.js
 | | - webpack.dev.js
 | | - webpack.prod.js
-| - .eslintrc.json
-| - .gitattributes
-| - .gitignore
-| - package-lock.json
-| - package.json
-| - postcss.config.js
-| - webpack.config.js
-| - README.md
+
 <br>
 BRANCH: MAIN
 | - CNAME
