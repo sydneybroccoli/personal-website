@@ -72,9 +72,12 @@ PRODUCTION EMPTY PUSH
 `git add .`
 `git commit -m 'yada yada'`
 `git push origin *branch*`
-`git checkout development`
+<br>
 COMPLETE PULL REQUEST
+<br>
 `git branch -d *branch`
+`git checkout development`
+`git pull origin development`
 <br>
 `npm run prod:build`
 `npm run prod:push`
