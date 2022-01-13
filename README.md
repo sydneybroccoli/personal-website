@@ -46,7 +46,7 @@ MAIN (GH-PAGES)
 | mhc-homepage.png
 | rd-homepage.png
 ```
-<br><br>
+
 ## DEVELOPMENT
 DEVELOPMENT BUILD<br>
 `npm run dev:build`<br>
@@ -55,7 +55,6 @@ DEVELOPMENT BUILD<br>
 DEVELOPMENT "PUSH"<br>
 `npm run dev:start`<br>
 `webpack-dev-server --open --config webpack.config.js --env.env=dev`
-
 
 ## PRODUCTION
 PRODUCTION BUILD<br>
@@ -76,18 +75,14 @@ PRODUCTION EMPTY PUSH<br>
 && git subtree push --prefix dist origin main`
 
 ### WEBPAGE BUILD ROUTINE
-1: `git add .`<br>
-2: `git commit -m 'yada yada'`<br>
-3: `git push origin *branch*`<br>
-<br>
-4: PULL REQUEST
-<br>
-<br>
-5: `git branch -d *branch`<br>
-6: `git checkout development`<br>
-7: `git pull origin development`<br>
-<br>
-8: `npm run prod:build`<br>
-9: `npm run prod:push`<br>
-10: IF YOU CANNOT COMPLETE A PUSH, YOU MAY NEED AN EMPTY PUSH TO FORCE GH-PAGES TO REBUILD <br> `npm run prod:emptypush`
+1. `git add .`<br>
+2. `git commit -m 'yada yada'`<br>
+3. `git push origin *branch*`<br>
+4. PULL REQUEST <br>
+5. `git branch -d *branch`<br>
+6. `git checkout development`<br>
+7. `git pull origin development`<br>
+8. `npm run prod:build`<br>
+9. `npm run prod:push`<br>
+10. IF YOU CANNOT COMPLETE A PUSH, YOU MAY NEED AN EMPTY PUSH TO FORCE GH-PAGES TO REBUILD <br> `npm run prod:emptypush`
 
