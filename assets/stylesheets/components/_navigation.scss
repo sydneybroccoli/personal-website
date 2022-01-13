@@ -9,8 +9,8 @@
   flex-direction: row;
 
   // STYLE
-  background-color: $dark-shade;
-  color: $light-accent;
+  background-color: $color-liver;
+  color: $color-white;
 
   a {
     text-decoration: none;
@@ -30,8 +30,9 @@
 
   a.brand {
     text-decoration: none;
-    color: $color-terra;
+    color: $color-white;
     font-size: 20px;
+    letter-spacing: 0.25rem;
   }
 }
 

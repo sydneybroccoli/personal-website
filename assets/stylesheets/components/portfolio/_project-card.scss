@@ -48,25 +48,25 @@ $height: 300px; $width: 300px;
 
   &:hover {
     opacity: 1;
-    background-color: $main-brand;
+    background-color: $color-sage;
   }
 }
 .portfolio-projects .proj-title {
 // POSITIONING
 // STYLING
   @include font-header;
-  color: $light-shade;
+  color: $color-white;
 }
 .proj-keywords {
 // POSITIONING
   display: none;
 // STYLING
   @include font-aside;
-  color: $light-shade;
+  color: $color-white;
 }
 .portfolio-projects .proj-desc {
 // POSITIONING
 // STYLING
   @include font-aside;
-  color: $light-shade;
+  color: $color-white;
 }
