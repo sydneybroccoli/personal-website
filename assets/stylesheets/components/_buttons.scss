@@ -12,17 +12,17 @@ $btn-margin: (100% - $btn-width) / 2;
   letter-spacing: 0.25em;
   text-align: center;
 
-  color: $light-shade;
-  background-color: $dark-accent;
-  border: black;
+  color: $color-white;
+  background-color: $color-liver;
+  border: $color-liver;
 
   &:hover {
-    opacity: 0.75;
+    opacity:0.9;
   }
 
   a {
     text-decoration: none;
-    color: $light-shade;
+    color: $color-liver;
   }
 }
 
@@ -34,9 +34,9 @@ $btn-margin: (100% - $btn-width) / 2;
   letter-spacing: 0.25em;
   text-align: center;
 
-  color: $light-shade;
-  background-color: $dark-accent;
-  border: black;
+  color: $color-white;
+  background-color: $color-liver;
+  border: $color-liver;
 
   &:hover {
     opacity: 0.75;
@@ -44,7 +44,7 @@ $btn-margin: (100% - $btn-width) / 2;
 
   a {
     text-decoration: none;
-    color: $light-shade;
+    color: $color-white;
   }
 }
 
@@ -52,6 +52,6 @@ $btn-margin: (100% - $btn-width) / 2;
   opacity: 0.9;
 
   &.link:hover { // opacity change on hover ONLY if it is ALSO A LINK
-    opacity: 0.75;
+    opacity: 0.9;
   }
 }
