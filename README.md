@@ -15,20 +15,24 @@ DEVELOPMENT
 | - ASSETS
 | | - DATA
 | | - IMAGES
+| | | - FAVICON
+| | | - PORTFOLIO
+| | | - RESUME
 | | - JAVASCRIPT
 | | - PAGES
 | | - STYLESHEETS
+|
 | - SRC
 | | index.html
 | | index.js
 | | style.scss
+|
 | - WEBPACK_CONFIG
 | | webpack.common.js
 | | webpack.dev.js
 | | webpack.prod.js
-```
-<br>
-```
+
+
 MAIN (GH-PAGES)
 | CNAME
 | SYDNEYBAROVSKYresumeFULL.pdf
