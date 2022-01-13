@@ -9,12 +9,12 @@
   flex-direction: row;
 
   // STYLE
-  background-color: $dark-shade;
-  color: $light-accent;
+  background-color: $color-liver;
+  color: $color-white;
 
   a {
     text-decoration: none;
-    color: $light-shade;
+    color: $color-white;
   }
 
   a:hover {
@@ -30,8 +30,9 @@
 
   a.brand {
     text-decoration: none;
-    color: $light-shade;
+    color: $color-white;
     font-size: 20px;
+    letter-spacing: 0.25rem;
   }
 }
 

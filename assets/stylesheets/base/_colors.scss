@@ -1,11 +1,25 @@
 // DEFINE VARIABLES FOR COLOR SCHEME
+$color-white: #F4F3EE;  // alablaster
+$color-terra: #ED6A5A;  // terra cotta
+$color-liver: #584B53;  // dark liver
+$color-sage:  #6F8F72;  // russian (sage) green
+$color-fern:  #5C7457;  // fern green
+
+// DEFINE COLORS AS CLASSES
+.color-white { color: $color-white; }
+.color-terra { color: $color-terra; }
+.color-liver { color: $color-liver; }
+.color-sage { color: $color-sage; }
+.color-fern { color: $color-fern; }
+
+
+
+
 $light-shade: #FBF9F9;
 $light-accent: #8EA7AF;
 $main-brand: #008B8B;
 $dark-accent: #A15155;
 $dark-shade: #2B2E2F;
-
-// DEFINE COLORS AS CLASSES
 .light-shade { color: $light-shade; }
 .light-accent { color: $light-accent; }
 .main-brand { color: $main-brand; }

@@ -1,6 +1,3 @@
-$main-font-color: $light-shade;
-$link-font-color: $light-shade;
-
 $hero-img-url: '../assets/images/hero-solo3.jpg';
 
 .hero {
@@ -30,20 +27,20 @@ $hero-img-url: '../assets/images/hero-solo3.jpg';
   // HEADER STYLING
   h1 {
     font-size: 5em !important;
-    color: $main-font-color !important;
+    color: $color-white !important;
   }
 
   // PARAGRAPH STYLING
   p {
     font-size: 1.5em !important;
     letter-spacing: 0.5em !important;
-    color: $main-font-color !important;
+    color: $color-white !important;
   }
 
   // LINKS STYLING
   a {
     text-decoration: none;
-    color: $link-font-color;
+    color: $color-terra;
     padding: 0 10px;
 
     &:hover {

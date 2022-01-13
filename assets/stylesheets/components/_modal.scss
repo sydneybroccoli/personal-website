@@ -15,7 +15,7 @@
 
 // MODAL CONTENT STYLING
 .modal-content {
-  background-color: #fefefe;
+  background-color: $color-white;
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -25,7 +25,7 @@
 }
 
 .close {
-  color: $light-accent;
+  color: $color-terra; opacity: 0.75;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -33,7 +33,7 @@
 
 .close:hover,
 .close:focus {
-  color: $dark-accent;
+  color: $color-terra; opacity: 1.0;
   text-decoration: none;
   cursor: pointer;
 }
