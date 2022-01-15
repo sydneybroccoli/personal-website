@@ -54,19 +54,16 @@ $height: 300px; $width: 300px;
 .portfolio-projects .proj-title {
 // POSITIONING
 // STYLING
-  @include font-header;
   color: $color-white;
 }
 .proj-keywords {
 // POSITIONING
   display: none;
 // STYLING
-  @include font-aside;
   color: $color-white;
 }
 .portfolio-projects .proj-desc {
 // POSITIONING
 // STYLING
-  @include font-aside;
   color: $color-white;
 }

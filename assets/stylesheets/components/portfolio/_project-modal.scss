@@ -30,7 +30,7 @@
   text-align: center;
 
   // STYLING
-  @include font-aside;
+  @include font-code;
 }
 .proj-content .proj-link {
   // POSITIONING
@@ -41,7 +41,7 @@
   justify-content: center;
 
   // STYLING
-  @include font-aside;
+  @include font-code;
   font-size: 15px;
 
   .link-repo, .link-deploy { width: 25%; }

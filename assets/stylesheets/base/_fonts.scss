@@ -1,38 +1,54 @@
 // IMPORT GOOGLE FONTS
-@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Roboto+Slab:wght@300;400&display=swap');
+  // HEADER FONT
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+  // BODY FONT 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+  // CODE FONT 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+  // SCRIPT FONT
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-$header-font: "Questrial", "Roboto", "sans-serif";
-$body-font: "Alegreya", "Roboto Slab", "serif";
-$mono-font: monospace;
-$font-mono: monospace;
 
-// DEFINE FONTS FOR HEADERS AND BODY
+// DECLARE FONT VARIABLES
+$font-header: "Alegreya Sans", "Roboto Condensed", sans-serif;
+$font-body: "Source Sans Pro", "Roboto Slab", serif;
+$font-code: "Source Code Pro", "Roboto Mono", monospace;
+$font-script: "Architects Daughter", "Alegreya Sans", sans-serif;
+
+// DEFINE FONTS
 @mixin font-header {
-  font-family: "Questrial", "Roboto", "sans-serif";
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 41px;
+  font-family: $font-header;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 51px;
   text-transform: uppercase;
 }
 .font-header { @include font-header; }
 
 @mixin font-body {
-  font-family: "Roboto Slab", "serif";
-  font-style: normal;
-  font-weight: 300;
+  font-family: $font-body;
+  font-weight: 400;
   font-size: 18px;
 }
 .font-body { @include font-body; }
 
-@mixin font-aside {
-  font-family: monospace;
-  font-size: 12px;
+@mixin font-code {
+  font-family: $font-code;
+  font-weight: 400;
+  font-size: 18px;
+}
+.font-code { @include font-code; }
+
+@mixin font-script {
+  font-family: $font-script;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 51px;
   text-transform: uppercase;
 }
-.font-aside { @include font-aside; }
+.font-script { @include font-script; }
 
-// DEFINE OTHER FONT CLASSES
+// DEFINE MISC FONT CLASSES
 .font-center { text-align: center; }
 .font-right { text-align: right; }
 .font-left { text-align: left; }
