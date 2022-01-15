@@ -1,5 +1,9 @@
 For the next time I wait too long to work on this repository... THE BASICS!
 
+## ATTRIBUTIONS
+FAVICON:
+<a href="https://www.vecteezy.com/free-vector/broccoli-icon">Broccoli Icon Vectors by Vecteezy</a>
+
 ## FILE ORGANIAZATION
 ```
 DEVELOPMENT
