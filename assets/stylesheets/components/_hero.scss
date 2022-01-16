@@ -26,6 +26,7 @@ $hero-img-url: '../assets/images/hero-solo3.jpg';
 
   // HEADER STYLING
   h1 {
+    @include font( "script", $weight: 400);
     font-size: 5em !important;
     color: $color-white !important;
   }
