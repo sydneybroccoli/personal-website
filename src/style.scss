@@ -16,17 +16,7 @@ body {
   padding: 0;
   // get rid of any chance of horizontal scroll
   overflow-x: hidden;
-
-  background-color: $light-shade;
-
-  .font-header {
-    @include font( "header" );
-    color: $dark-shade;
-  }
-  .font-body {
-    @include font( "body" );
-    color: $dark-shade;
-  }
+  background-color: $color-white;
 }
 
 .overlay {

@@ -8,18 +8,14 @@
 @import "modal";
 
 // ABOUT COMPONENTS
-@import "about/index-about";
+@import "about/index";
 
 // CONTACT COMPONENTS
-@import "contact/index-contact";
+@import "contact/index";
 
 // PORTFOLIO COMPONENTS
-@import "portfolio/card";
-@import "portfolio/content";
-@import "portfolio/img";
-@import "portfolio/project-card";
-@import "portfolio/project-modal";
+@import "portfolio/index";
 
 // RESUME COMPONENTS
-@import "resume/modal";
+@import "resume/index";
 

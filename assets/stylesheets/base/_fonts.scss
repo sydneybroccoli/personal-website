@@ -30,20 +30,37 @@ $font-families: (
   $transform: none, 
   $align: center,  
   $height: normal, 
-  $spacing: normal ) 
-{
-  font-family: map-get($font-families, $family);
+  $spacing: normal ) {
 
-  @if ( $family == ("header" or "script") ) {
-    font-size: 50px;
-  } @else {
-    font-size: $size;
-  }
-  
+  font-family: map-get($font-families, $family);
+  font-size: $size;
   font-weight: $weight;
   font-style: $style;
   text-transform: $transform;
   text-align: $align;
   line-height: $height;
   letter-spacing: $spacing;
+
+}
+
+
+// DEFINE FONT CLASSES
+.font-script {
+  @include font( "script", $size: 50px );
+}
+
+.font-header { 
+  @include font( "header", $size: 50px, $weight: 900, $height: 51px, $transform: uppercase, $spacing: 1em ); 
+}
+
+.font-title {
+  @include font( "header", $size: 25px, $weight: 700, $height: 27px, $transform: uppercase );
+}
+
+.font-body {
+  @include font( "body" );
+}
+
+.font-code {
+  @include font( "code" );
 }

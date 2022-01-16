@@ -1,5 +1,5 @@
 #about-header {
-  @include font("script", $size: 50px);
+  @include font("header", $size: 50px, $weight: 900);
 }
 
 #about-blurb {
