@@ -1,5 +1,5 @@
 a.link {
-  @include font-code;
+  @include font( "code" );
   text-decoration: none;
   color: $color-sage;
 

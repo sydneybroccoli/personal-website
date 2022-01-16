@@ -1,0 +1,7 @@
+#about-header {
+  @include font("script", $size: 50px);
+}
+
+#about-blurb {
+  @include font("body")
+}

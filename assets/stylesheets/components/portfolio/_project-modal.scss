@@ -18,9 +18,7 @@
   height: auto; width: 100%;
 
   // STYLING
-  @include font-header;
-  text-align: center;
-  letter-spacing: 1em;
+  @include font( "header", $spacing: 1em );
 }
 
 .proj-content {}
@@ -30,7 +28,7 @@
   text-align: center;
 
   // STYLING
-  @include font-code;
+  @include font( "code" );
 }
 .proj-content .proj-link {
   // POSITIONING
@@ -41,7 +39,7 @@
   justify-content: center;
 
   // STYLING
-  @include font-code;
+  @include font( "code" );
   font-size: 15px;
 
   .link-repo, .link-deploy { width: 25%; }

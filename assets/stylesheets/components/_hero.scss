@@ -33,6 +33,7 @@ $hero-img-url: '../assets/images/hero-solo3.jpg';
 
   // PARAGRAPH STYLING
   p {
+    @include font( "script", $weight: 400);
     font-size: 1.5em !important;
     letter-spacing: 0.5em !important;
     color: $color-white !important;
